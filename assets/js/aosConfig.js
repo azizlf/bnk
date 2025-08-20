@@ -1,0 +1,3 @@
+function aosConf() {
+    AOS.init();
+}
