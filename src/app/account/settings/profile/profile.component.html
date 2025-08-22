@@ -1,0 +1,48 @@
+<div class="page">
+    <div class="img">
+        <div class="cvr">
+            <div class="icon">
+                <ion-icon name="cloud-upload-outline"></ion-icon>
+            </div>
+        </div>
+        <img src="/assets/img/profile-pic.png" alt="img" />
+    </div>
+    <div class="section">
+        <div class="title">Information Personelles</div>
+        <div class="input">
+            <div class="lbl">Nom et Prénom</div>
+            <input type="text" placeholder="Nom et Prénom">
+        </div>
+        <div class="input">
+            <div class="lbl">Nom d'utilisateur</div>
+            <input type="text" placeholder="Nom d'utilisateur">
+        </div>
+        <div class="input">
+            <div class="lbl">Adresse Email</div>
+            <input type="text" placeholder="Adresse Email">
+        </div>
+        <div class="input">
+            <div class="lbl">Pays</div>
+            <select>
+                <option value="none">Sélectionner</option>
+                <option [value]="counrty" *ngFor="let counrty of countries">{{counrty}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="section">
+        <div class="title">Mot de passe</div>
+        <div class="input">
+            <div class="lbl">Mot de passe actuelle</div>
+            <input type="password" placeholder="Ancien mot de passe">
+        </div>
+        <div class="input">
+            <div class="lbl">Nouveau mot de passe</div>
+            <input type="password" placeholder="Nouveau mot de passe">
+        </div>
+        <div class="input">
+            <div class="lbl">Confirmer nouveau mot de passe</div>
+            <input type="password" placeholder="Confirmer nouveau mot de passe">
+        </div>
+    </div>
+    <button class="sec-btn">enregistrer</button>
+</div>

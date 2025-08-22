@@ -1,0 +1,175 @@
+.login-app {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.login-app .form {
+
+    width: 48%;
+    height: 96%;
+    margin: 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.login-app .form img {
+
+    width: 27%;
+    position: absolute;
+    top: 2%;
+    left: 1.5%;
+
+}
+
+.login-app .form input {
+
+    width: 85%;
+    padding: 2.5% 4%;
+    font-size: 1.1vw;
+    margin-bottom: 6%;
+    background-color: transparent;
+    border: 0.1vw solid #d8d8d8;
+
+}
+
+.login-app .form input::placeholder {
+
+    color: #9e9e9e;
+
+}
+
+.login-app .form input:focus {
+
+    border-color: #099a4d;
+    background-color: #099a4d12;
+
+}
+
+.login-app .form .psf {
+
+    font-size: 1.2vw;
+    color: #0c3c3f;
+    margin-top: 3%;
+
+}
+
+.login-app .form .psf span {
+
+    cursor: pointer;
+
+}
+
+.login-app .form .psf span:hover {
+
+    text-decoration: underline;
+
+}
+
+.login-app .form .title {
+
+    font-size: 2.8vw;
+    text-align: center;
+    width: 90%;
+    margin-top: 13%;
+    margin-bottom: 5%;
+    color: #2c2c2c;
+
+}
+
+.login-app .form .sbtitle {
+
+    font-size: 1.1vw;
+    margin-bottom: 7%;
+    text-align: center;
+    width: 90%;
+
+}
+
+.login-app .form button {
+
+    width: 85%;
+    font-size: 1.1vw;
+    padding: 2.5% 0;
+    background-color: var(--theme-color);
+    color: white;
+    transition: 0.3s;
+    margin-top: 1%;
+
+}
+
+.login-app .form button:hover {
+
+    background-color: #08292b;
+
+}
+
+.login-app .form .ft {
+
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15vw;
+    margin-top: 9%;
+    color: #585858;
+
+}
+
+.login-app .form .ft span {
+
+    cursor: pointer;
+    padding-left: 4%;
+    color: #0e4649;
+
+}
+
+.login-app .form .ft span:hover {
+
+    text-decoration: underline;
+
+}
+
+.login-app .cover {
+
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(45deg, #0c3c3f 45%, #055C2D 80%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.login-app .cover img {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    
+}
+
+.login-app .cover .cvr {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(-23deg, #003d409a 30%,#000000a9 100%) ;
+    z-index: 12;
+
+}

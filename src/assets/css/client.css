@@ -1,0 +1,1265 @@
+::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+::-webkit-scrollbar-track {
+    background: #eaeaea;
+    border-radius: 10000vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 10000vw;
+}
+
+.client-app {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f7f7f700;
+    overflow: hidden;
+
+}
+
+.client-app .navbar-cs {
+
+    width: 100%;
+    padding: 0.7% 0;
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1vw solid #f4f4f4;
+
+}
+
+.client-app .menu-nav {
+
+    position: absolute;
+    z-index: 124325312;
+    background-color: white;
+    right: 1%;
+    top: 12%;
+    overflow: hidden;
+    width: 22%;
+    box-shadow: 0 0 0.5vw 0 #00000017;
+    border-radius: 1vw;
+    padding: 1%;
+
+}
+
+.client-app .menu-nav .user {
+
+    width: 100%;
+    border-radius: 1vw;
+    background-color: #fafafa;
+    margin-bottom: 3%;
+    padding: 3% 0;
+    padding-bottom: 6%;
+
+}
+
+.client-app .menu-nav .user .user-dt {
+
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 4%;
+    border-radius: 0.8vw;
+    margin: 0 2%;
+
+}
+
+.client-app .menu-nav .user .user-dt .dt {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+
+}
+
+.client-app .menu-nav .user .user-dt .dt .name {
+
+    width: 100%;
+    line-height: 1.5vw;
+    overflow: hidden;
+}
+
+.client-app .menu-nav .user .user-dt .dt .name p {
+
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #232323;
+    font-weight: 600;
+
+}
+
+.client-app .menu-nav .user .user-dt .dt .name span {
+
+    font-size: 0.9vw;
+
+}
+
+.client-app .menu-nav .user .user-dt .dt img {
+
+    width: 20%;
+    border-radius: 100%;
+    margin-right: 3%;
+
+
+}
+
+.client-app .menu-nav .user .hr {
+
+    width: 90%;
+    padding: 0.05% 0;
+    background-color: #f0f0f0;
+    margin: 5%;
+    margin-top: 3%;
+
+}
+
+.client-app .menu-nav .user button {
+
+    width: 90%;
+    padding: 2% 0;
+    font-size: 1.1vw;
+    color: white;
+    background-color: #0d5357;
+    border-radius: 0.6vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5%;
+
+}
+
+.client-app .menu-nav .user button .icon {
+
+    font-size: 1.5vw;
+    margin-bottom: -4%;
+    margin-right: 2%;
+
+}
+
+
+.client-app .menu-nav .user button:hover {
+
+    background-color: var(--theme-color);
+
+}
+
+.client-app .menu-nav .item {
+
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    padding: 3% 3%;
+    border-radius: 0.5vw;
+
+}
+
+.client-app .menu-nav .item:active {
+
+    scale: 0.98;
+
+}
+
+.client-app .menu-nav .item .icon {
+
+    background-color: #f1f1f1;
+    padding: 6.9% 7%;
+    border-radius: 100%;
+    margin-right: 5%;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f1f1f;
+
+}
+
+.client-app .menu-nav .item .icon ion-icon {
+
+    position: absolute;
+
+}
+
+.client-app .menu-nav .item:hover {
+
+    background-color: #f9f9f9;
+
+}
+
+.client-app .navbar-cs .menu {
+
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 1%;
+    color: #232323;
+
+}
+
+.client-app .navbar-cs .logo {
+
+    width: 12%;
+    margin-left: 3%;
+
+}
+
+.client-app .navbar-cs .item {
+
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-left: 2%;
+    transition: 0.2s;
+
+}
+
+.client-app .navbar-cs .item.active {
+
+    font-weight: 600;
+    color: #0e595e;
+
+}
+
+.client-app .navbar-cs .item:hover {
+
+    color: #0e595e;
+
+}
+
+.client-app .navbar-cs .user {
+
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    padding: 1% 0.3%;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #f4f4f4;
+    cursor: pointer;
+    background-color: #fefefe;
+    user-select: none;
+
+}
+
+.client-app .navbar-cs .user:hover {
+
+    background-color: #f9f9f9;
+
+}
+
+.client-app .navbar-cs .user .img {
+
+    font-size: 3vw;
+    margin: 0 2%;
+
+}
+
+.client-app .navbar-cs .user .dt {
+
+    font-size: 1vw;
+    line-height: 1.4vw;
+    width: 95%;
+
+}
+
+.client-app .navbar-cs .user .dt .name {
+
+    font-size: 1.1vw;
+    font-weight: 600;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.client-app .navbar-cs .user .icon {
+
+    font-size: 1.8vw;
+    margin: 0 2%;
+
+}
+
+.client-app .content-page {
+
+    width: 100%;
+    height: 100%;
+    background-color: #fbfbfb;
+    overflow: hidden;
+
+}
+
+/**********************************************************************************************/
+/****************************************** Dashbord ******************************************/
+/**********************************************************************************************/
+
+.client-app .content-page .dashbord-app {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.client-app .content-page .dashbord-app .overview {
+
+    width: 55%;
+    height: 97%;
+    background-color: white;
+    border: 0.1vw solid #f8f8f8;
+    position: relative;
+
+}
+
+.client-app .content-page .dashbord-app .overview .solde {
+
+    font-size: 2vw;
+    color: #232323;
+    padding: 3%;
+    padding-bottom: 3%;
+
+}
+
+.client-app .content-page .dashbord-app .overview .solde .tl{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.client-app .content-page .dashbord-app .overview .solde .icon {
+
+    margin-right: 1%;
+
+}
+
+.client-app .content-page .dashbord-app .overview .solde .money {
+
+    font-size: 4vw;
+    margin-top: 5%;
+    font-weight: 600;
+
+}
+
+.client-app .content-page .dashbord-app .overview .list {
+
+    width: 95%;
+    max-height: 40%;
+    margin: 0 2%;
+    margin-top: 1%;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.client-app .content-page .dashbord-app .overview .list .item {
+
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3% 0;
+    color: #232323;
+    font-size: 1vw;
+
+}
+
+.client-app .content-page .dashbord-app .overview .list .item .lbl {
+
+    width: 35%;
+    display: flex;
+    align-items: center;
+    font-size: 1.1vw;
+    font-weight: 600;
+
+}
+
+.client-app .content-page .dashbord-app .overview .list .item .lbl .icon {
+
+    color: #0e595e;
+    font-size: 1.4vw;
+    margin-right: 3%;
+
+}
+
+.client-app .content-page .dashbord-app .overview .tbl {
+
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin-top: 3%;
+    margin-left: 2%;
+    color: #232323;
+
+}
+
+.client-app .content-page .dashbord-app .overview .footer {
+
+    width: 95%;
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 3%;
+
+}
+
+.client-app .content-page .dashbord-app .overview .footer .btn {
+
+    width: 30%;
+    padding: 1.8% 0;
+    background-color: #0e595e;
+    color: white;
+    border-radius: 1vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+
+}
+
+.client-app .content-page .dashbord-app .overview .footer .btn:hover {
+
+    background-color: #0a3e41;
+
+}
+
+.client-app .content-page .dashbord-app .overview .footer .btn .icon {
+
+    font-size: 2.3vw;
+    margin: -1% 0;
+
+}
+
+.client-app .content-page .dashbord-app .right {
+
+    width: 42%;
+    height: 97%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.client-app .content-page .dashbord-app .sec {
+
+    width: 100%;
+    height: 37%;
+    background-color: white;
+    border: 0.1vw solid #f8f8f8;
+
+}
+
+.client-app .content-page .dashbord-app .sec .title {
+
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #232323;
+    padding: 3% 4%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+
+}
+
+.client-app .content-page .dashbord-app .sec .title .icon {
+
+    margin-right: 1%;
+
+}
+
+.client-app .content-page .dashbord-app .sec .item-ntf {
+
+    width: 95%;
+    margin: 1.4% 2%;
+    padding: 2.4% 3%;
+    border: 0.1vw solid #f4f4f4;
+    border-radius: 0.4vw;
+
+}
+
+.client-app .content-page .dashbord-app .sec .item-ntf .ttl {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #232323;
+    font-size: 1.2vw;
+
+}
+
+.client-app .content-page .dashbord-app .sec .item-ntf .ttl .icon {
+
+    font-size: 2vw;
+    margin-right: 1%;
+
+}
+
+.client-app .content-page .dashbord-app .sec .item-ntf .time {
+
+    font-size: 1vw;
+    margin-left: 7%;
+
+}
+
+.client-app .content-page .dashbord-app .sec .item-ntf p {
+
+    font-size: 1.2vw;
+    padding: 1% 6.5%;
+    color: #232323;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.client-app .content-page .dashbord-app .sec .ctn {
+
+    width: 95%;
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.client-app .content-page .dashbord-app .sec .ctn .s {
+
+    width: 60%;
+    color: #232323;
+    padding: 3%;
+    line-height: 4vw;
+    font-size: 1.3vw;
+
+}
+
+.client-app .content-page .dashbord-app .sec .ctn .s .nbr {
+
+    font-size: 4vw;
+    font-weight: 600;
+    margin-top: 2%;
+
+}
+
+.client-app .content-page .dashbord-app .sec .ctn .round {
+
+    width: 31%;
+    padding: 15% 0;
+    transform: translateY(-20%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.client-app .content-page .dashbord-app .sec .ctn .round .cr {
+
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 100%;
+    z-index: 12;
+
+}
+
+.client-app .content-page .dashbord-app .sec .ctn .round .clr {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(#0d5357 65%, #0a3e415b 30%);
+    border-radius: 100%;
+
+}
+
+.client-app .content-page .dashbord-app .sec.ntf {
+
+    height: 60%;
+
+}
+
+/***********************************************************************************************/
+/****************************************** Transfert ******************************************/
+/***********************************************************************************************/
+
+
+.client-app .content-page .transfert-app {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.client-app .content-page .transfert-app .description {
+
+    width: 40%;
+
+}
+
+.client-app .content-page .transfert-app .description .title {
+
+    font-size: 3vw;
+    color: #232323;
+    line-height: 4vw;
+
+}
+
+.client-app .content-page .transfert-app .description .title span {
+
+    color: #126e73;
+
+}
+
+.client-app .content-page .transfert-app .description .desc {
+
+    font-size: 1.2vw;
+    color: #494949;
+    line-height: 2.3vw;
+    margin: 3% 0;
+    margin-top: 3%;
+
+}
+
+.client-app .content-page .transfert-app .description img {
+
+    width: 60%;
+
+}
+
+.client-app .content-page .transfert-app .form {
+
+    width: 43%;
+    background-color: #fcfcfc;
+    border: 0.1vw solid #eaeaea;
+    border-radius: 1vw;
+
+}
+
+.client-app .content-page .transfert-app .form .input {
+
+    width: 90%;
+    margin: 3% 5%;
+    margin-bottom: 2%;
+
+}
+
+.client-app .content-page .transfert-app .form .input .lbl {
+
+    font-size: 1.2vw;
+    margin-bottom: 2%;
+    color: #232323;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+}
+
+.client-app .content-page .transfert-app .form .input .lbl .icon {
+
+    font-size: 1.8vw;
+    margin: -10% 0;
+    margin-bottom: -11%;
+    margin-right: 2%;
+
+}
+
+
+.client-app .content-page .transfert-app .form .input input,
+.client-app .content-page .transfert-app .form .input textarea {
+
+    width: 100%;
+    border: 0.1vw solid #eaeaea;
+    padding: 1% 3%;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    resize: none;
+
+}
+
+.client-app .content-page .transfert-app .form .input input:focus,
+.client-app .content-page .transfert-app .form .input textarea:focus {
+
+    border-color: #138187;
+
+}
+
+
+.client-app .content-page .transfert-app .form .input input::placeholder,
+.client-app .content-page .transfert-app .form .input textarea::placeholder {
+
+    color: #7c7c7c;
+
+}
+
+.client-app .content-page .transfert-app .form button {
+
+    width: 90%;
+    margin: 0 5%;
+    padding: 2% 0;
+    font-size: 1.2vw;
+    background-color: #0e595e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0.4vw;
+    margin-bottom: 3%;
+
+
+}
+
+.client-app .content-page .transfert-app .form button:hover {
+
+    background-color: #0a3e41;
+
+}
+
+.client-app .content-page .transfert-app .form button .icon {
+
+    margin-bottom: -2%;
+    margin-right: 2%;
+    font-size: 1.6vw;
+
+}
+
+/***********************************************************************************************/
+/****************************************** settings *******************************************/
+/***********************************************************************************************/
+
+.settings-account {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.settings-account .menu {
+
+    width: 20%;
+    overflow: hidden;
+    margin-top: 4%;
+
+}
+
+.settings-account .menu .item {
+
+    width: 100%;
+    padding: 4%;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    color: #232323;
+    cursor: pointer;
+    border-radius: 1vw;
+    margin-bottom: 2%;
+
+}
+
+.settings-account .menu .item:hover {
+
+    background-color: #f5f5f5;
+
+}
+
+
+.settings-account .menu .item .icon {
+
+    font-size: 1.5vw;
+    margin-right: 3%;
+    background-color: #eaeaea;
+    padding: 3% 0;
+    width: 16.6%;
+    text-align: center;
+    border-radius: 100%;
+    padding-bottom: 2%;
+
+}
+
+.settings-account .menu .item.active {
+
+    background-color: #106266;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1vw;
+
+}
+
+.settings-account .menu .item.active .icon {
+
+    background-color: white;
+    color: #0d9096;
+
+}
+
+.settings-account .content-pager {
+
+    width: 70%;
+    margin-top: 3%;
+
+}
+
+.settings-account .content-pager .page {
+
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.settings-account .content-pager .page .img {
+
+    width: 25%;
+    margin-bottom: 3%;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.settings-account .content-pager .page .img img {
+
+    width: 100%;
+    border-radius: 100%;
+
+}
+
+.settings-account .content-pager .page .img .cvr {
+
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.settings-account .content-pager .page .img .cvr .icon {
+
+    font-size: 4vw;
+
+}
+
+.settings-account .content-pager .page .img:hover .cvr {
+
+    opacity: 1;
+
+}
+
+.settings-account .content-pager .section {
+
+    width: 90%;
+    border-radius: 1vw;
+    border: 0.1vw solid #ededed;
+    margin: 3% 0;
+    padding-bottom: 2%;
+
+}
+
+.settings-account .content-pager .section .title {
+
+    width: 100%;
+    padding: 2% 3%;
+    background-color: #f5f5f5;
+    color: #232323;
+    font-weight: 600;
+    font-size: 1.1vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.settings-account .content-pager .section .title .icon {
+
+    margin-right: 1%;
+    font-size: 2vw;
+
+}
+
+.settings-account .content-pager .section .input {
+
+    width: 90%;
+    margin: 2% 5%;
+    position: relative;
+
+}
+
+.settings-account .content-pager .section .input .lbl {
+
+    font-size: 1.1vw;
+    margin-bottom: 1%;
+    font-weight: 600;
+    color: #3b3b3b;
+
+}
+
+.settings-account .content-pager .section .input .drop-down {
+
+    position: absolute;
+    width: 100%;
+    height: 400%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 0.6vw;
+    width: 100%;
+    z-index: 829347923;
+    margin-top: 1%;
+    box-shadow: 0 0 0.5vw 0 #0000001d;
+
+}
+
+.settings-account .content-pager .section .input .drop-down .list {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.settings-account .content-pager .section .input .drop-down .item {
+
+    width: 99%;
+    font-size: 1.1vw;
+    border-radius: 0.6vw;
+    padding: 1% 2%;
+    color: #232323;
+    cursor: pointer;
+
+}
+
+.settings-account .content-pager .section .input .drop-down .item:hover {
+
+    background-color: #f7f7f7;
+
+}
+
+.settings-account .content-pager .section .input input {
+
+    width: 100%;
+    border-radius: 0.6vw;
+    padding: 1.6% 2%;
+    font-size: 1.1vw;
+    border: 0.1vw solid #ededed;
+    background-color: white;
+
+}
+
+.settings-account .content-pager .section .input input::placeholder {
+
+    color: #5e5e5e;
+
+}
+
+.settings-account .content-pager .section .input input:focus {
+
+    border: 0.1vw solid #14777e;
+
+}
+
+.settings-account .content-pager .sec-btn {
+
+    width: 90%;
+    padding: 1.5% 0;
+    border-radius: 0.7vw;
+    background-color: #0d5357;
+    color: white;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-bottom: 5%;
+
+}
+
+.settings-account .content-pager .sec-btn:hover {
+
+    background-color: #0a3e41;
+
+}
+
+.settings-account .content-pager .section .sec-btn {
+
+    margin: 0 5%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+
+}
+
+.settings-account .content-pager .section .desc {
+
+    width: 98%;
+    margin: 0 9%;
+    margin-bottom: 1%;
+    margin-top: -1%;
+
+}
+
+.settings-account .content-pager .section .desc ul li {
+
+    list-style: circle;
+    font-size: 0.9vw;
+
+}
+
+.settings-account .content-pager .section select {
+
+    width: 100%;
+    border-radius: 0.6vw;
+    padding: 2.8% 2%;
+    font-size: 1.1vw;
+    border: 0.1vw solid #ededed;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.settings-account .content-pager .cards {
+
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.settings-account .content-pager .cards .card-cs {
+
+    width: 47%;
+    display: flex;
+    align-items: center;
+    border: 0.1vw solid #ededed;
+    background-color: white;
+    border-radius: 0.7vw;
+    padding: 1% 2%;
+
+}
+
+.settings-account .content-pager .cards .card-cs .icon {
+
+    width: 17.2%;
+    padding: 4% 0;
+    background-color: #0d535725;
+    color: #147176;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 2%;
+    font-size: 2vw;
+    padding-bottom: 3%;
+
+}
+
+.settings-account .content-pager .cards .card-cs .dt {
+
+    font-size: 1vw;
+    line-height: 1.9vw;
+
+}
+
+.settings-account .content-pager .cards .card-cs .dt span {
+
+    font-size: 1.3vw;
+    color: #232323;
+    font-weight: 600;
+
+}
+
+
+/***********************************************************************************************/
+/****************************************** investing *******************************************/
+/***********************************************************************************************/
+
+
+.client-app .content-page .invest-app {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.client-app .content-page .invest-app .cover {
+
+    width: 90%;
+    border-radius: 2vw;
+    text-align: center;
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(-45deg, #0a3e41 45%, #0c565a 70%);
+    color: white;
+    /* color: #232323; */
+    margin: 3% 0;
+
+}
+
+.client-app .content-page .invest-app .cover .title {
+
+    font-size: 4vw;
+    line-height: 6.5vw;
+
+}
+
+.client-app .content-page .invest-app .cover .desc {
+
+    font-size: 1.5vw;
+    line-height: 2.8vw;
+    width: 80%;
+    opacity: 0.8;
+
+}
+
+.client-app .content-page .invest-app .cover input {
+
+    width: 80%;
+    padding: 1% 2%;
+    font-size: 1.2vw;
+    border: none;
+    border-radius: 0.5vw;
+    background-color: white;
+    margin-top: 4%;
+    opacity: 0.8;
+
+}
+
+.client-app .content-page .invest-app .cover input::placeholder {
+
+    color: #5e5e5e;
+
+}
+
+.client-app .content-page .invest-app .cover input:focus {
+
+    opacity: 1;
+
+}
+
+.client-app .content-page .invest-app .projects {
+
+    width: 95%;
+    margin-top: 1%;
+    display: inline-block;
+    margin-bottom: 3%;
+
+}
+
+.client-app .content-page .invest-app .projects .project {
+
+    width: 32%;
+    padding: 19% 0;
+    border-radius: 1vw;
+    background-color: white;
+    box-shadow: 0 0 0.5vw 0 #00000012;
+    position: relative;
+    float: left;
+    margin: 1% 0;
+    margin-left: 1%;
+
+}
+
+.client-app .content-page .invest-app .projects .project .ctn {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.client-app .content-page .invest-app .projects .project .image {
+
+    width: 90%;
+    height: 58%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5%;
+    margin-bottom: 0;
+    border-radius: 1vw;
+
+}
+
+
+.client-app .content-page .invest-app .projects .project .title {
+
+    font-size: 1.7vw;
+    color: #232323;
+    font-weight: 600;
+    line-height: 2.8vw;
+    padding: 3% 5%;
+    padding-bottom: 0;
+    cursor: pointer;
+
+}
+
+.client-app .content-page .invest-app .projects .project .title:hover{
+
+    color: #0d5357;
+    text-decoration: underline;
+
+}
+
+.client-app .content-page .invest-app .projects .project .description {
+
+    font-size: 1.2vw;
+    line-height: 2.1vw;
+    margin-top: 2%;
+    padding: 0 5%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+.news-block-two .inner-box:before{
+  box-shadow: 0 0 0.5vw 0 #0000001d !important;
+  background-color: #f8f8f8 !important;
+  border-radius: 0.5vw;
+}
