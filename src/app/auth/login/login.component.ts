@@ -9,6 +9,11 @@ declare function aosConf():void
 })
 export class LoginComponent implements OnInit {
 
+  loadHomeClient(){
+    location.href = "/#/app"
+    location.reload()
+  }
+
   ngOnInit(): void {
 
     aosConf()

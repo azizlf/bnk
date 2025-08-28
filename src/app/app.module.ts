@@ -22,6 +22,7 @@ import { SettingsComponent } from './account/settings/settings.component';
 import { TransfertComponent } from './account/transfert/transfert.component';
 import { InvestmentComponent } from './account/investment/investment.component';
 import { DashbordComponent } from './account/dashbord/dashbord.component';
+import { FacturesComponent } from './account/factures/factures.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { DashbordComponent } from './account/dashbord/dashbord.component';
     TransfertComponent,
     InvestmentComponent,
     DashbordComponent,
+    FacturesComponent,
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,7 @@ import { ProfileComponent } from './account/settings/profile/profile.component';
 import { WalletComponent } from './account/settings/wallet/wallet.component';
 import { BankComponent } from './account/settings/bank/bank.component';
 import { AccountComponent } from './account/account.component';
+import { FacturesComponent } from './account/factures/factures.component';
 
 const routes: Routes = [
 
@@ -78,8 +79,12 @@ const routes: Routes = [
         component: TransfertComponent
       },
       {
-        path: "investissements",
+        path: "invest",
         component: InvestmentComponent
+      },
+      {
+        path: "payement",
+        component: FacturesComponent
       },
       {
         path: "settings",
