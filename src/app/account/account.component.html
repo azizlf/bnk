@@ -4,9 +4,10 @@
         <div class="menu">
             <div [class]="router === '' ? 'item active':'item'" (click)="router = ''"  routerLink="/app/">Acceuil</div>
             <div [class]="router === 'transfert' ? 'item active':'item'" (click)="router = 'transfert'" routerLink="/app/transfert">Envoyer / Reçevoir</div>
-            <div [class]="router === 'retrait' ? 'item active':'item'" (click)="router = 'retrait'" routerLink="/app/retrait">Retirer d'argent</div>
+            <div [class]="router === 'withdraw' ? 'item active':'item'" (click)="router = 'withdraw'" routerLink="/app/withdraw">Retirer d'argent</div>
             <div [class]="router === 'payement' ? 'item active':'item'" (click)="router = 'payement'" routerLink="/app/payement">Paiement factures</div>
-            <div [class]="router === 'invest' ? 'item active':'item'" (click)="router = 'invest'" routerLink="/app/invest">Investissements</div>
+            <div [class]="router === 'invest' ? 'item active':'item'" (click)="router = 'invest'" routerLink="/app/invest">Investir</div>
+            <div [class]="router === 'social' ? 'item active':'item'" (click)="router = 'social'" routerLink="/app/social">Impact Sociale</div>
             <div class="user" (click)="openMenuNav = !openMenuNav" >
                 <div class="img">
                     <ion-icon name="person-circle-outline"></ion-icon>

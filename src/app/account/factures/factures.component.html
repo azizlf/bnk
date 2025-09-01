@@ -5,21 +5,53 @@
         possimus molestiae fuga rem eius iure placeat, explicabo, veritatis error earum ducimus iste
         voluptatibus ipsa assumenda. Ipsa, id.
     </div>
-    <div class="blocks">
-        <div class="block">
+    <div class="blocks" *ngIf="!openFormFacture">
+        <div class="block" (click)="openFormFacture = true;company = 'steg'">
             <img src="/assets/img/steg.png" alt="logo">
         </div>
-        <div class="block">
+        <div class="block" (click)="openFormFacture = true;company = 'sonede'">
             <img src="/assets/img/sonede.png" alt="logo">
         </div>
-        <div class="block">
+        <div class="block" (click)="openFormFacture = true;company = 'ooreedoo'">
             <img src="/assets/img/ooreedoo.png" alt="logo">
         </div>
-        <div class="block">
+        <div class="block" (click)="openFormFacture = true;company = 'topnet'">
             <img src="/assets/img/topnet.png" alt="logo">
         </div>
-        <div class="block">
+        <div class="block" (click)="openFormFacture = true;company = 'orange'">
             <img src="/assets/img/orange.png" alt="logo">
         </div>
+    </div>
+    <div class="form" *ngIf="openFormFacture">
+        <div class="logo-form">
+            <img [src]="'/assets/img/'+company+'.png'" alt="">
+            <span>{{company}}</span>
+        </div>
+        <div class="input-form-cs">
+            <div class="lbl">Référance (16)</div>
+            <input type="text" placeholder="référance">
+        </div>
+        <div class="input-form-cs">
+            <div class="lbl">Montant en dt</div>
+            <input type="text" placeholder="montant">
+        </div>
+        <div class="input-form-cs">
+            <div class="lbl">Clé</div>
+            <input type="text" placeholder="référance">
+        </div>
+        <div class="input-form-cs">
+            <div class="lbl">Mot de passe</div>
+            <input type="password" placeholder="mot de passe">
+        </div>
+        <div class="input-form-cs">
+            <div class="lbl">Choisire carte bancaire</div>
+            <select>
+                <option value="0">séléctionner</option>
+                <option value="1234 5678 9435 6293">N° 1234 5678 9435 6293</option>
+                <option value="9876 5432 1424 7895">N° 9876 5432 1424 7895</option>
+            </select>
+        </div>
+        <button>payer</button>
+        <div class="ft" (click)="openFormFacture = false">Changer le fournisseur ou la société</div>
     </div>
 </div>

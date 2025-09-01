@@ -1,0 +1,83 @@
+<div class="withdraw-app">
+    <div class="banks">
+        <div class="title">Compte Bancaire</div>
+        <div class="sb">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, fugiat consequuntur.
+        </div>
+        <div [class]="bankChecked === 'attijari' ? 'item active' : 'item' " (click)="bankChecked = 'attijari'">
+            <div class="round">
+                <div class="icon off"><ion-icon name="radio-button-off-outline"></ion-icon></div>
+                <div class="icon on"><ion-icon name="radio-button-on-outline"></ion-icon></div>
+            </div>
+            <div class="tl">
+                <img src="/assets/img/atj.png" alt="">
+                <span>Attijari Bank</span>
+            </div>
+            <div class="dt">
+                <span>Titulaire du compte : </span>
+                Shayma Ghuidhaoui
+            </div>
+            <div class="dt">
+                <span>RIB : </span>
+                123456789535
+            </div>
+            <div class="dt">
+                <span>IBAN : </span>
+                TN534123456789535
+            </div>
+        </div>
+        <div [class]="bankChecked === 'biat' ? 'item active' : 'item' " (click)="bankChecked = 'biat'">
+            <div class="round">
+                <div class="icon off"><ion-icon name="radio-button-off-outline"></ion-icon></div>
+                <div class="icon on"><ion-icon name="radio-button-on-outline"></ion-icon></div>
+            </div>
+            <div class="tl">
+                <img src="/assets/img/biat.png" alt="">
+                <span>BIAT</span>
+            </div>
+            <div class="dt">
+                <span>Titulaire du compte : </span>
+                Shayma Ghuidhaoui
+            </div>
+            <div class="dt">
+                <span>RIB : </span>
+                123456789535
+            </div>
+            <div class="dt">
+                <span>IBAN : </span>
+                TN534123456789535
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="title">Retrait de l'argent</div>
+        <div class="sb">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, fugiat consequuntur.
+        </div>
+        <div class="money-dt">
+            <div class="item">
+                <span>Balance</span>
+                <span>34500 DT</span>
+            </div>
+            <div class="hr"></div>
+            <div class="item">
+                <span>Solde Disponible</span>
+                <span>30000 DT</span>
+            </div>
+        </div>
+        <div class="input">
+            <div class="lbl">Montant</div>
+            <input type="number" placeholder="montant">
+        </div>
+        <div class="rq">
+            <ul>
+                <li>Lorem ipsum dolor sit amet Perferendis, suscipit in.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, suscipit in.</li>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing suscipit in.</li>
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+        </div>
+        <button>retirer</button>
+    </div>
+</div>

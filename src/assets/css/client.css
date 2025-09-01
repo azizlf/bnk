@@ -48,7 +48,7 @@
     right: 1%;
     top: 12%;
     overflow: hidden;
-    width: 40%;
+    width: 24%;
     box-shadow: 0 0 0.5vw 0 #00000036;
     border-radius: 1vw;
     padding: 1%;
@@ -223,7 +223,7 @@
 
 .client-app .navbar-cs .item {
 
-    font-size: 1.1vw;
+    font-size: 1vw;
     cursor: pointer;
     margin-left: 1%;
     transition: 0.2s;
@@ -428,7 +428,7 @@
 
     font-size: 1.3vw;
     color: #000000;
-    margin-bottom: 0.8%;
+    margin-bottom: 0%;
 
 }
 
@@ -441,6 +441,7 @@
     padding: 3% 1%;
     margin: 1.9% 0;
     margin-right: 4%;
+    margin-bottom: 0;
     float: left;
     color: #232323;
 
@@ -460,6 +461,7 @@
     margin-left: 3%;
     text-align: center;
     color: #0d5357;
+    margin-bottom: -3%;
 
 }
 
@@ -475,18 +477,31 @@
 
 .client-app .content-page .dashbord-app .sc .flexed .s {
 
-    width: 49%;
+    width: 100%;
     height: 100%;
     background-color: white;
     border: 0.1vw solid #eeeeee;
+    overflow: hidden;
+    overflow-y: auto;
 
 }
+
+.client-app .content-page .dashbord-app .sc .flexed .s::-webkit-scrollbar-track {
+    background: #f7f7f7;
+    border-radius: 0vw;
+}
+
+.client-app .content-page .dashbord-app .sc .flexed .s::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 0vw;
+}
+
 
 .client-app .content-page .dashbord-app .sc .flexed .s .title {
 
     font-size: 1.2vw;
     font-weight: 600;
-    padding: 4%;
+    padding: 2% 4%;
     color: #3d3d3d;
 
 }
@@ -499,7 +514,7 @@
     color: #000000;
     line-height: 1.5vw;
     cursor: pointer;
-    padding: 1.9% 2%;
+    padding: 2% 0.3%;
 
 }
 
@@ -536,7 +551,6 @@
     padding: 0 3%;
 
 }
-
 
 .client-app .content-page .dashbord-app .sc .cards {
 
@@ -699,9 +713,18 @@
 
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.client-app .content-page .transfert-app .ctn-trans{
+
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 5% 0;
 
 }
 
@@ -713,9 +736,10 @@
 
 .client-app .content-page .transfert-app .description .title {
 
-    font-size: 3vw;
+    font-size: 2.7vw;
     color: #232323;
-    line-height: 4vw;
+    line-height: 3vw;
+    margin-bottom: 4%;
 
 }
 
@@ -728,22 +752,56 @@
 .client-app .content-page .transfert-app .description .desc {
 
     font-size: 1.2vw;
-    color: #494949;
+    color: #272727;
     line-height: 2.3vw;
     margin: 3% 0;
     margin-top: 3%;
 
 }
 
-.client-app .content-page .transfert-app .description img {
+.client-app .content-page .transfert-app .description .item {
 
-    width: 60%;
+    width: 100%;
+    margin-bottom: 4%;
+
+}
+
+.client-app .content-page .transfert-app .description .item .icon{
+
+    width: 5.8%;
+    padding: 0.4% 0;
+    background-color: #18bdc621;
+    color: #0c565a;
+    text-align: center;
+    font-size: 1.4vw;
+    border-radius: 0.4vw;
+    margin-bottom: 1%;
+
+}
+
+.client-app .content-page .transfert-app .description .item .icon ion-icon{
+
+    margin-bottom: -10%;
+
+}
+
+.client-app .content-page .transfert-app .description .item .tl{
+
+    font-size: 1.1vw;
+    color: #000000;
+
+}
+
+.client-app .content-page .transfert-app .description .item .des{
+
+    font-size: 1vw;
+    color: #313131;
 
 }
 
 .client-app .content-page .transfert-app .form {
 
-    width: 43%;
+    width: 35%;
     background-color: #fcfcfc;
     border: 0.1vw solid #eaeaea;
     border-radius: 1vw;
@@ -762,8 +820,7 @@
 
     font-size: 1.2vw;
     margin-bottom: 2%;
-    color: #232323;
-    font-weight: 600;
+    color: #000000;
     display: flex;
     align-items: center;
 
@@ -771,10 +828,8 @@
 
 .client-app .content-page .transfert-app .form .input .lbl .icon {
 
-    font-size: 1.8vw;
-    margin: -10% 0;
-    margin-bottom: -11%;
     margin-right: 2%;
+    font-size: 1.8vw;
 
 }
 
@@ -783,10 +838,11 @@
 .client-app .content-page .transfert-app .form .input textarea {
 
     width: 100%;
-    border: 0.1vw solid #eaeaea;
-    padding: 1% 3%;
-    border-radius: 0.3vw;
+    border-radius: 0.6vw;
+    padding: 2% 2.9%;
     font-size: 1vw;
+    border: 0.1vw solid #ededed;
+    background-color: white;
     resize: none;
 
 }
@@ -818,7 +874,8 @@
     justify-content: center;
     color: white;
     border-radius: 0.4vw;
-    margin-bottom: 3%;
+    margin-bottom: 6%;
+    margin-top: 4%;
 
 
 }
@@ -831,8 +888,7 @@
 
 .client-app .content-page .transfert-app .form button .icon {
 
-    margin-bottom: -2%;
-    margin-right: 2%;
+    margin-right: 3%;
     font-size: 1.6vw;
 
 }
@@ -1365,6 +1421,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
 
 }
 
@@ -1417,5 +1475,380 @@
 .client-app .content-page .factures-app .blocks .block img{
 
     width: 100%;
+
+}
+
+
+.client-app .content-page .factures-app .form {
+
+    width: 40%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.client-app .content-page .factures-app .form .input-form-cs {
+
+    width: 100%;
+    font-size: 1.2vw;
+    color: #2a2a2a;
+    margin-bottom: 4%;
+
+}
+
+.client-app .content-page .factures-app .form .input-form-cs .lbl {
+
+    margin-bottom: 1%;
+
+}
+
+.client-app .content-page .factures-app .form .input-form-cs input {
+
+    width: 100%;
+    border-radius: 0.6vw;
+    padding: 2% 2.9%;
+    font-size: 1.1vw;
+    border: 0.1vw solid #ededed;
+    background-color: white;
+
+}
+
+.client-app .content-page .factures-app .form .input-form-cs input::placeholder {
+
+    color: #5e5e5e;
+
+}
+
+.client-app .content-page .factures-app .form .input-form-cs input:focus {
+
+    border: 0.1vw solid #14777e;
+
+}
+
+.client-app .content-page .factures-app .form .input-form-cs select {
+
+    width: 100%;
+    border-radius: 0.6vw;
+    padding: 3% 2.9%;
+    font-size: 1.1vw;
+    border: 0.1vw solid #ededed;
+    background-color: white;
+
+}
+
+.client-app .content-page .factures-app .form .logo-form {
+
+    width: 100%;
+    border: 0.1vw solid #ededed;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+    color: #2e2e2e;
+    border-radius: 0.6vw;
+    font-weight: 600;
+    margin-bottom: 5%;
+
+}
+
+.client-app .content-page .factures-app .form .logo-form img {
+
+    width: 10%;
+    margin-right: 1%;
+    margin-left: 1%;
+
+}
+
+.client-app .content-page .factures-app .form button {
+
+    width: 100%;
+    padding: 2% 0;
+    border-radius: 0.6vw;
+    background-color: #0d5357;
+    color: white;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+}
+
+.client-app .content-page .factures-app .form .ft {
+
+    font-size: 1.2vw;
+    color: #0d5357;
+    cursor: pointer;
+    margin-bottom: 11%;
+
+}
+
+.client-app .content-page .factures-app .form .ft:hover{
+
+    text-decoration: underline;
+
+}
+
+
+/***********************************************************************************************/
+/****************************************** withdraw *******************************************/
+/***********************************************************************************************/
+
+.client-app .content-page .withdraw-app {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+
+.client-app .content-page .withdraw-app .banks{
+
+    width: 43%;
+    height: 90%;
+    border-right: 0.1vw solid #e6e6e6;
+    padding: 0 8%;
+    padding-left: 0%;
+    margin-right: 3%;
+}
+
+.client-app .content-page .withdraw-app .banks .title{
+
+    font-size: 2.5vw;
+    color: #232323;
+    margin-bottom: 3%;
+
+}
+
+.client-app .content-page .withdraw-app .banks .sb{
+
+    font-size: 1.2vw;
+    color: #3a3a3a;
+    margin-bottom: 3%;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item{
+
+    width: 100%;
+    border: 0.1vw solid #ececec;
+    font-size: 1.4vw;
+    color: #3a3a3a;
+    padding: 3% 4%;
+    margin-top: 1%;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item.active{
+
+    border-color: #16a4ab;
+    background-color: #17a3ab22;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item.active .round{
+
+    color: #126e73;
+
+}
+
+
+.client-app .content-page .withdraw-app .banks .item .round{
+
+    position: absolute;
+    color: #3e3e3e;
+    top: 8%;
+    right: 3%;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item .round .off{
+
+    display: block;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item .round .on{
+
+    display: none;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item.active .round .off{
+
+    display: none;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item.active .round .on{
+
+    display: block;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item .tl{
+
+    font-size: 1.6vw;
+    margin-bottom: 4%;
+    display: flex;
+    align-items: center;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item .tl img{
+
+    width: 7%;
+    margin-right: 2%;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item .dt{
+
+    font-size: 1.1vw;
+    width: 100%;
+    margin: 2% 0;
+
+}
+
+.client-app .content-page .withdraw-app .banks .item .dt span{
+
+    padding-right: 3%;
+    font-weight: 600;
+
+}
+
+
+.client-app .content-page .withdraw-app .form{
+
+    width: 45%;
+    height: 90%;
+
+}
+
+
+.client-app .content-page .withdraw-app .form .title{
+
+    font-size: 2.5vw;
+    color: #232323;
+    margin-bottom: 3%;
+
+}
+
+.client-app .content-page .withdraw-app .form .sb{
+
+    font-size: 1.2vw;
+    color: #3a3a3a;
+    margin-bottom: 3%;
+
+}
+
+.client-app .content-page .withdraw-app .form .money-dt{
+
+    width: 90%;
+    border: 0.1vw solid #eeeeee;
+    border-radius: 0.4vw;
+
+}
+
+.client-app .content-page .withdraw-app .form .money-dt .item{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+    color: #1f1f1f;
+    padding: 2% 4%;
+
+}
+
+.client-app .content-page .withdraw-app .form .money-dt .item span{
+
+    font-weight: 600;
+    padding-right: 2%;
+    color: #343434;
+
+}
+
+.client-app .content-page .withdraw-app .form .money-dt .hr{
+
+    width: 100%;
+    padding: 0.04% 0;
+    background-color: #eeeeee;
+
+}
+
+.client-app .content-page .withdraw-app .form .input{
+
+    width: 90%;
+    font-size: 1.2vw;
+    margin-top: 5%;
+
+}
+
+.client-app .content-page .withdraw-app .form .input .lbl{
+
+    margin-bottom: 1%;
+    color: #151515;
+
+}
+
+.client-app .content-page .withdraw-app .form .input input {
+
+    width: 100%;
+    border-radius: 0.6vw;
+    padding: 2% 2.9%;
+    font-size: 1.1vw;
+    border: 0.1vw solid #ededed;
+    background-color: white;
+
+}
+
+.client-app .content-page .withdraw-app .form .input input::placeholder {
+
+    color: #5e5e5e;
+
+}
+
+.client-app .content-page .withdraw-app .form .input input:focus {
+
+    border: 0.1vw solid #14777e;
+
+}
+
+.client-app .content-page .withdraw-app .form  button {
+
+    width: 90%;
+    padding: 1.6% 0;
+    border-radius: 0.6vw;
+    background-color: #0d5357;
+    color: white;
+    font-size: 1.2vw;
+    cursor: pointer;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+}
+
+.client-app .content-page .withdraw-app .form  ul{
+
+    width: 90%;
+    margin: 1% 0;
+    font-size: 0.9vw;
+    margin-left: 5%;
+
+}
+
+.client-app .content-page .withdraw-app .form  ul li{
+
+    list-style: circle;
 
 }

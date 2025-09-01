@@ -23,6 +23,7 @@ import { TransfertComponent } from './account/transfert/transfert.component';
 import { InvestmentComponent } from './account/investment/investment.component';
 import { DashbordComponent } from './account/dashbord/dashbord.component';
 import { FacturesComponent } from './account/factures/factures.component';
+import { WithdrawComponent } from './account/withdraw/withdraw.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { FacturesComponent } from './account/factures/factures.component';
     InvestmentComponent,
     DashbordComponent,
     FacturesComponent,
+    WithdrawComponent,
   ],
   imports: [
     BrowserModule,
