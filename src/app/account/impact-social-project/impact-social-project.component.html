@@ -1,0 +1,27 @@
+<div class="impact-social-project-app">
+    <div class="title">{{project.title}}</div>
+    <div class="sb">{{project.description}}</div>
+    <div class="projects">
+        <div class="project" *ngFor="let project of project.prj">
+            <div class="img"
+                style="background-image: url('{{project.img}}');">
+            </div>
+            <div class="tl">{{project.title}}</div>
+        </div>
+    </div>
+    <div class="blocks">
+        <div class="block" *ngFor="let detail of project.details">
+            <div class="nbr">{{detail.nbr}}</div>
+            <div class="tl">{{detail.title}}</div>
+        </div>
+    </div>
+    <div class="sec-title">
+        <div class="tl">Témoignages</div>
+    </div>
+    <div class="comment" *ngFor="let comment of project.comments">
+        <div class="text">{{comment.text}}</div>
+        <div class="img"
+            style="background-image: url('{{comment.img}}');">
+        </div>
+    </div>
+</div>

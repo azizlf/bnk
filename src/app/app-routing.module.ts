@@ -20,6 +20,8 @@ import { BankComponent } from './account/settings/bank/bank.component';
 import { AccountComponent } from './account/account.component';
 import { FacturesComponent } from './account/factures/factures.component';
 import { WithdrawComponent } from './account/withdraw/withdraw.component';
+import { ImpactSocialComponent } from './account/impact-social/impact-social.component';
+import { ImpactSocialProjectComponent } from './account/impact-social-project/impact-social-project.component';
 
 const routes: Routes = [
 
@@ -97,7 +99,11 @@ const routes: Routes = [
       },
       {
         path: "social",
-        component: InvestmentComponent
+        component: ImpactSocialComponent
+      },
+      {
+        path: "projet/:id",
+        component: ImpactSocialProjectComponent
       },
       {
         path: "settings",

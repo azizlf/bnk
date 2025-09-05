@@ -24,6 +24,8 @@ import { InvestmentComponent } from './account/investment/investment.component';
 import { DashbordComponent } from './account/dashbord/dashbord.component';
 import { FacturesComponent } from './account/factures/factures.component';
 import { WithdrawComponent } from './account/withdraw/withdraw.component';
+import { ImpactSocialComponent } from './account/impact-social/impact-social.component';
+import { ImpactSocialProjectComponent } from './account/impact-social-project/impact-social-project.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { WithdrawComponent } from './account/withdraw/withdraw.component';
     DashbordComponent,
     FacturesComponent,
     WithdrawComponent,
+    ImpactSocialComponent,
+    ImpactSocialProjectComponent,
   ],
   imports: [
     BrowserModule,

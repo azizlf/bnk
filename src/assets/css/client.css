@@ -205,7 +205,7 @@
 
 .client-app .navbar-cs .menu {
 
-    width:80%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -718,7 +718,7 @@
 
 }
 
-.client-app .content-page .transfert-app .ctn-trans{
+.client-app .content-page .transfert-app .ctn-trans {
 
     width: 100%;
     display: flex;
@@ -766,7 +766,7 @@
 
 }
 
-.client-app .content-page .transfert-app .description .item .icon{
+.client-app .content-page .transfert-app .description .item .icon {
 
     width: 5.8%;
     padding: 0.4% 0;
@@ -779,20 +779,20 @@
 
 }
 
-.client-app .content-page .transfert-app .description .item .icon ion-icon{
+.client-app .content-page .transfert-app .description .item .icon ion-icon {
 
     margin-bottom: -10%;
 
 }
 
-.client-app .content-page .transfert-app .description .item .tl{
+.client-app .content-page .transfert-app .description .item .tl {
 
     font-size: 1.1vw;
     color: #000000;
 
 }
 
-.client-app .content-page .transfert-app .description .item .des{
+.client-app .content-page .transfert-app .description .item .des {
 
     font-size: 1vw;
     color: #313131;
@@ -1038,6 +1038,27 @@
     border: 0.1vw solid #ededed;
     margin: 3% 0;
     padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.settings-account .content-pager .section .bankcard {
+
+    width: 30%;
+    padding: 1% 4%;
+    border-radius: 1vw;
+    background-color: white;
+    box-shadow: 0 0 0.5vw 0 #0000000e;
+    margin: 3% 0;
+
+}
+
+.settings-account .content-pager .section img {
+
+    width: 100%;
 
 }
 
@@ -1045,12 +1066,26 @@
 
     width: 100%;
     padding: 2% 3%;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     color: #232323;
     font-weight: 600;
     font-size: 1.1vw;
     display: flex;
     align-items: center;
+    border-bottom: 0.1vw solid #ededed;
+
+}
+
+.settings-account .content-pager .section .title .icon {
+
+    font-size: 1.3vw;
+    cursor: pointer;
+    font-size: 2vw;
+    background-color: #f3f3f3;
+    padding: 1% 1.3%;
+    border-radius: 0.5vw;
+    color: #323232;
+    padding-bottom: 0.5%;
 
 }
 
@@ -1058,6 +1093,30 @@
 
     margin-right: 1%;
     font-size: 2vw;
+
+}
+
+.settings-account .content-pager .section .flex-inputs {
+
+    width: 90%;
+    margin: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+
+}
+
+.settings-account .content-pager .section .flex-inputs .input {
+
+    width: 46%;
+    margin: 0;
+
+}
+
+.settings-account .content-pager .section .flex-inputs .input input {
+
+    padding: 3% 4%;
 
 }
 
@@ -1171,7 +1230,7 @@
 
 .settings-account .content-pager .section .desc {
 
-    width: 98%;
+    width: 85%;
     margin: 0 9%;
     margin-bottom: 1%;
     margin-top: -1%;
@@ -1426,7 +1485,7 @@
 
 }
 
-.client-app .content-page .factures-app .title{
+.client-app .content-page .factures-app .title {
 
     font-size: 4vw;
     color: #3b3b3b;
@@ -1435,7 +1494,7 @@
 
 }
 
-.client-app .content-page .factures-app .desc{
+.client-app .content-page .factures-app .desc {
 
     font-size: 1.2vw;
     color: #3b3b3b;
@@ -1445,7 +1504,7 @@
 
 }
 
-.client-app .content-page .factures-app .blocks{
+.client-app .content-page .factures-app .blocks {
 
     width: 85%;
     display: flex;
@@ -1453,7 +1512,7 @@
 
 }
 
-.client-app .content-page .factures-app .blocks .block{
+.client-app .content-page .factures-app .blocks .block {
 
     width: 34%;
     margin-right: 1%;
@@ -1466,13 +1525,13 @@
 
 }
 
-.client-app .content-page .factures-app .blocks .block:hover{
+.client-app .content-page .factures-app .blocks .block:hover {
 
     scale: 1.03;
 
 }
 
-.client-app .content-page .factures-app .blocks .block img{
+.client-app .content-page .factures-app .blocks .block img {
 
     width: 100%;
 
@@ -1584,7 +1643,7 @@
 
 }
 
-.client-app .content-page .factures-app .form .ft:hover{
+.client-app .content-page .factures-app .form .ft:hover {
 
     text-decoration: underline;
 
@@ -1608,7 +1667,7 @@
 }
 
 
-.client-app .content-page .withdraw-app .banks{
+.client-app .content-page .withdraw-app .banks {
 
     width: 43%;
     height: 90%;
@@ -1618,7 +1677,7 @@
     margin-right: 3%;
 }
 
-.client-app .content-page .withdraw-app .banks .title{
+.client-app .content-page .withdraw-app .banks .title {
 
     font-size: 2.5vw;
     color: #232323;
@@ -1626,7 +1685,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .banks .sb{
+.client-app .content-page .withdraw-app .banks .sb {
 
     font-size: 1.2vw;
     color: #3a3a3a;
@@ -1634,7 +1693,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .banks .item{
+.client-app .content-page .withdraw-app .banks .item {
 
     width: 100%;
     border: 0.1vw solid #ececec;
@@ -1647,21 +1706,21 @@
 
 }
 
-.client-app .content-page .withdraw-app .banks .item.active{
+.client-app .content-page .withdraw-app .banks .item.active {
 
     border-color: #16a4ab;
     background-color: #17a3ab22;
 
 }
 
-.client-app .content-page .withdraw-app .banks .item.active .round{
+.client-app .content-page .withdraw-app .banks .item.active .round {
 
     color: #126e73;
 
 }
 
 
-.client-app .content-page .withdraw-app .banks .item .round{
+.client-app .content-page .withdraw-app .banks .item .round {
 
     position: absolute;
     color: #3e3e3e;
@@ -1670,31 +1729,31 @@
 
 }
 
-.client-app .content-page .withdraw-app .banks .item .round .off{
+.client-app .content-page .withdraw-app .banks .item .round .off {
 
     display: block;
 
 }
 
-.client-app .content-page .withdraw-app .banks .item .round .on{
+.client-app .content-page .withdraw-app .banks .item .round .on {
 
     display: none;
 
 }
 
-.client-app .content-page .withdraw-app .banks .item.active .round .off{
+.client-app .content-page .withdraw-app .banks .item.active .round .off {
 
     display: none;
 
 }
 
-.client-app .content-page .withdraw-app .banks .item.active .round .on{
+.client-app .content-page .withdraw-app .banks .item.active .round .on {
 
     display: block;
 
 }
 
-.client-app .content-page .withdraw-app .banks .item .tl{
+.client-app .content-page .withdraw-app .banks .item .tl {
 
     font-size: 1.6vw;
     margin-bottom: 4%;
@@ -1703,14 +1762,14 @@
 
 }
 
-.client-app .content-page .withdraw-app .banks .item .tl img{
+.client-app .content-page .withdraw-app .banks .item .tl img {
 
     width: 7%;
     margin-right: 2%;
 
 }
 
-.client-app .content-page .withdraw-app .banks .item .dt{
+.client-app .content-page .withdraw-app .banks .item .dt {
 
     font-size: 1.1vw;
     width: 100%;
@@ -1718,7 +1777,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .banks .item .dt span{
+.client-app .content-page .withdraw-app .banks .item .dt span {
 
     padding-right: 3%;
     font-weight: 600;
@@ -1726,7 +1785,7 @@
 }
 
 
-.client-app .content-page .withdraw-app .form{
+.client-app .content-page .withdraw-app .form {
 
     width: 45%;
     height: 90%;
@@ -1734,7 +1793,7 @@
 }
 
 
-.client-app .content-page .withdraw-app .form .title{
+.client-app .content-page .withdraw-app .form .title {
 
     font-size: 2.5vw;
     color: #232323;
@@ -1742,7 +1801,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form .sb{
+.client-app .content-page .withdraw-app .form .sb {
 
     font-size: 1.2vw;
     color: #3a3a3a;
@@ -1750,7 +1809,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form .money-dt{
+.client-app .content-page .withdraw-app .form .money-dt {
 
     width: 90%;
     border: 0.1vw solid #eeeeee;
@@ -1758,7 +1817,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form .money-dt .item{
+.client-app .content-page .withdraw-app .form .money-dt .item {
 
     width: 100%;
     display: flex;
@@ -1770,7 +1829,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form .money-dt .item span{
+.client-app .content-page .withdraw-app .form .money-dt .item span {
 
     font-weight: 600;
     padding-right: 2%;
@@ -1778,7 +1837,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form .money-dt .hr{
+.client-app .content-page .withdraw-app .form .money-dt .hr {
 
     width: 100%;
     padding: 0.04% 0;
@@ -1786,7 +1845,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form .input{
+.client-app .content-page .withdraw-app .form .input {
 
     width: 90%;
     font-size: 1.2vw;
@@ -1794,7 +1853,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form .input .lbl{
+.client-app .content-page .withdraw-app .form .input .lbl {
 
     margin-bottom: 1%;
     color: #151515;
@@ -1824,7 +1883,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form  button {
+.client-app .content-page .withdraw-app .form button {
 
     width: 90%;
     padding: 1.6% 0;
@@ -1838,7 +1897,7 @@
 
 }
 
-.client-app .content-page .withdraw-app .form  ul{
+.client-app .content-page .withdraw-app .form ul {
 
     width: 90%;
     margin: 1% 0;
@@ -1847,8 +1906,394 @@
 
 }
 
-.client-app .content-page .withdraw-app .form  ul li{
+.client-app .content-page .withdraw-app .form ul li {
 
     list-style: circle;
+
+}
+
+
+/****************************************************************************************************/
+/****************************************** impact social *******************************************/
+/****************************************************************************************************/
+
+.client-app .content-page .impact-social-app {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.client-app .content-page .impact-social-app .title {
+
+    width: 70%;
+    font-size: 4vw;
+    color: #202020;
+    margin-bottom: 2%;
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.client-app .content-page .impact-social-app .sb {
+
+    width: 70%;
+    font-size: 1.5vw;
+    color: #505050;
+    margin-bottom: 4%;
+    text-align: center;
+
+}
+
+.client-app .content-page .impact-social-app .blocks {
+
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.client-app .content-page .impact-social-app .blocks .block {
+
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    padding: 4% 1%;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw 0 #0000000e;
+    transition: 0.2s;
+
+}
+
+.client-app .content-page .impact-social-app .blocks .block:hover {
+
+    background-color: #0d5357;
+    scale: 1.04;
+
+}
+
+.client-app .content-page .impact-social-app .blocks .block:hover .nbr,
+.client-app .content-page .impact-social-app .blocks .block:hover .tl,
+.client-app .content-page .impact-social-app .blocks .block:hover .icon {
+
+    color: white;
+
+}
+
+
+.client-app .content-page .impact-social-app .blocks .block .nbr {
+
+    font-size: 3vw;
+    font-weight: 600;
+    color: #3b3b3b;
+
+}
+
+.client-app .content-page .impact-social-app .blocks .block .tl {
+
+    font-size: 1.2vw;
+    margin: 3% 0;
+
+}
+
+.client-app .content-page .impact-social-app .blocks .block .icon {
+
+    font-size: 3vw;
+    color: #10676c;
+
+}
+
+.client-app .content-page .impact-social-app .sec-title {
+
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    border-bottom: 0.1vw solid #e7e7e7;
+    padding-bottom: 2%;
+
+}
+
+.client-app .content-page .impact-social-app .sec-title .tl {
+
+    font-size: 2vw;
+    color: #202020;
+    font-weight: 600;
+
+}
+
+.client-app .content-page .impact-social-app .sec-title button {
+
+    font-size: 1.2vw;
+    background-color: #10666a;
+    color: white;
+    border-radius: 0.2vw;
+    border: none;
+    cursor: pointer;
+    padding: 1% 2%;
+    border-radius: 0.6vw;
+
+}
+
+.client-app .content-page .impact-social-app .sec-title button:hover {
+
+    background-color: #0d5357;
+
+}
+
+.client-app .content-page .impact-social-app .projects {
+
+    width: 90%;
+    display: inline-block;
+    margin-bottom: 4%;
+
+}
+
+.client-app .content-page .impact-social-app .projects .project {
+
+    width: 48%;
+    padding: 2%;
+    border-radius: 1vw;
+    background-color: white;
+    border: 0.1vw solid #e8e8e8;
+    float: left;
+    margin: 1% 0.8%;
+    margin-right: 0.4%;
+
+}
+
+.client-app .content-page .impact-social-app .projects .project .img {
+
+    width: 100%;
+    padding: 33% 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1vw;
+    margin-bottom: 3%;
+
+}
+
+.client-app .content-page .impact-social-app .projects .project .tl {
+
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #2e2e2e;
+    margin-bottom: 2%;
+    cursor: pointer;
+
+}
+
+.client-app .content-page .impact-social-app .projects .project .tl:hover {
+
+    text-decoration: underline;
+    color: #138187;
+
+}
+
+.client-app .content-page .impact-social-app .projects .project .desc {
+
+    font-size: 1.2vw;
+    color: #4c4c4c;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.client-app .content-page .impact-social-app .projects .project button {
+
+    border: 0.1vw solid #8a8a8a;
+    padding: 1% 3%;
+    color: #393939;
+    font-size: 1.2vw;
+    border-radius: 10000vw;
+    margin: 2% 0;
+    margin-top: 4%;
+    transition: 0.2s;
+
+}
+
+.client-app .content-page .impact-social-app .projects .project button:hover {
+
+    background-color: #126e73;
+    color: white;
+    border-color: #126e73;
+
+}
+
+
+/************************************************************************************************************/
+/****************************************** impact social project *******************************************/
+/************************************************************************************************************/
+
+
+.client-app .content-page .impact-social-project-app {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.client-app .content-page .impact-social-project-app .title {
+
+    width: 50%;
+    font-size: 4vw;
+    color: #202020;
+    margin-bottom: 2%;
+    text-align: center;
+    margin-top: 5%;
+    line-height: 5vw;
+
+}
+
+.client-app .content-page .impact-social-project-app .sb {
+
+    width: 70%;
+    font-size: 1.5vw;
+    color: #505050;
+    margin-bottom: 4%;
+    text-align: center;
+
+}
+
+.client-app .content-page .impact-social-project-app .blocks {
+
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7%;
+    margin-bottom: 5%;
+
+}
+
+.client-app .content-page .impact-social-project-app .blocks .block {
+
+    width: 30%;
+    text-align: center;
+    transition: 0.2s;
+
+}
+
+.client-app .content-page .impact-social-project-app .blocks .block .nbr {
+
+    font-size: 4vw;
+    font-weight: 600;
+    color: #3b3b3b;
+
+}
+
+.client-app .content-page .impact-social-project-app .blocks .block .tl {
+
+    font-size: 1.5vw;
+    margin: 3% 0;
+    margin-top: 10%;
+
+}
+
+.client-app .content-page .impact-social-project-app .blocks .block .icon {
+
+    font-size: 3vw;
+    color: #10676c;
+
+}
+
+.client-app .content-page .impact-social-project-app .projects {
+
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.client-app .content-page .impact-social-project-app .projects .project {
+
+    width: 30%;
+    padding: 2%;
+    border-radius: 1vw;
+    background-color: white;
+    border: 0.1vw solid #e8e8e8;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #343434;
+
+}
+
+.client-app .content-page .impact-social-project-app .projects .project .img {
+
+    width: 100%;
+    padding: 40% 0;
+    border-radius: 1vw;
+    margin-bottom: 3%;
+
+}
+
+.client-app .content-page .impact-social-project-app .sec-title {
+
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    border-bottom: 0.1vw solid #e7e7e7;
+    padding-bottom: 2%;
+
+}
+
+.client-app .content-page .impact-social-project-app .sec-title .tl {
+
+    font-size: 2vw;
+    color: #202020;
+    font-weight: 600;
+
+}
+
+.client-app .content-page .impact-social-project-app .comment {
+
+    width: 90%;
+    padding: 2% 0;
+    border-radius: 1vw;
+    /* border: 0.1vw solid #dfdfdf;
+    background-color: white; */
+    display: flex;
+    align-items: center;
+
+}
+
+.client-app .content-page .impact-social-project-app .comment .text {
+
+    font-size: 1.2vw;
+    line-height: 2vw;
+    color: #393939;
+    width: 70%;
+
+}
+
+.client-app .content-page .impact-social-project-app .comment .img {
+
+    width: 30%;
+    padding: 10% 0;
+    border-radius: 1vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
 
 }

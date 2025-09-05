@@ -5,12 +5,12 @@
             <span>Profile</span>
         </div>
         <div [class]="router === 'wallet' ? 'item active' : 'item'" (click)="router = 'wallet'" routerLink="/app/settings/wallet">
-            <div class="icon"><ion-icon name="wallet-outline"></ion-icon></div>
-            <span>Portfeuille</span>
+            <div class="icon"><ion-icon name="card-outline"></ion-icon></div>
+            <span>Cartes Bancaire</span>
         </div>
         <div [class]="router === 'bank' ? 'item active' : 'item'" (click)="router = 'bank'" routerLink="/app/settings/bank">
-            <div class="icon"><ion-icon name="card-outline"></ion-icon></div>
-            <span>Compte Bancaire</span>
+            <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+            <span>Comptes Bancaire</span>
         </div>
     </div>
 

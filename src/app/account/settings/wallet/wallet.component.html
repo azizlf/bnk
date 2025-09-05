@@ -1,36 +1,37 @@
 <div class="page">
-    <div class="cards">
-        <div class="card-cs">
-            <div class="icon"><ion-icon name="wallet-outline"></ion-icon></div>
-            <div class="dt">
-                Solde Disponible <br>
-                <span>12000 DT</span>
-            </div>
-        </div>
-        <div class="card-cs">
-            <div class="icon"><ion-icon name="cash-outline"></ion-icon></div>
-            <div class="dt">
-                Solde des investissements <br>
-                <span>12000 DT</span>
-            </div>
-        </div>
-    </div>
     <div class="section">
-        <div class="title">Convertir to invest</div>
+        <div class="title">
+            <div class="icon"><ion-icon name="arrow-back"></ion-icon></div>
+            <span>Ajouter une carte bancaire</span>
+        </div>
+        <div class="bankcard">
+            <img [src]="'/assets/img/'+cardImage+'.png'" alt="">
+        </div>
         <div class="input">
-            <div class="lbl">Montant ( en DT )</div>
-            <input type="number" placeholder="Montant">
+            <div class="lbl">Numero de la carte</div>
+            <input type="number" (input)="detectCardType($event)" placeholder="1234 6789 1011 1213">
+        </div>
+        <div class="input">
+            <div class="lbl">Titulaire de la carte</div>
+            <input type="number" placeholder="titulaire de la carte">
+        </div>
+        <div class="flex-inputs">
+            <div class="input">
+                <div class="lbl">Date d'expiration</div>
+                <input type="number" placeholder="01/25">
+            </div>
+            <div class="input">
+                <div class="lbl">CVV / CVC</div>
+                <input type="password" placeholder="cvv / cvc">
+            </div>
         </div>
         <div class="desc">
             <ul>
-                <li>Le montant converti sera bloqué dans votre portefeuille d'investissement et ne
-                    pourra pas être retiré immédiatement.</li>
-                <li>La durée minimale d'investissement est de X mois.</li>
-                <li>Des frais de gestion de 1% s'appliquer sur vos investissements.</li>
-                <li>Vous pouvez suivre vos placements et leurs rendements en tant que profile
-                    investisseur.</li>
+                <li>La carte utilisée doit être activée pour les paiements en ligne.</li>
+                <li>Un montant de 1 $ sera temporairement débité pour vérifier la validité de la carte.</li>
+                <li>La carte doit disposer d'un solde suffisant pour effectuer la vérification.</li>
             </ul>
         </div>
-        <button class="sec-btn">convertir</button>
+        <button class="sec-btn">Ajouter</button>
     </div>
 </div>
