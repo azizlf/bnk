@@ -221,9 +221,8 @@
 
 .client-app .navbar-cs .item {
 
-    font-size: 1vw;
+    font-size: 0.98vw;
     cursor: pointer;
-    margin-left: 1%;
     transition: 0.2s;
     border-radius: 10000vw;
     padding: 0.4% 1.4%;
@@ -2552,5 +2551,327 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 5%;
+
+}
+
+/************************************************************************************************************/
+/****************************************** invest project *******************************************/
+/************************************************************************************************************/
+
+
+.client-app .content-page .invest-project-app {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.client-app .content-page .invest-project-app .title-page {
+
+    width: 95%;
+    font-size: 3vw;
+    color: #202020;
+    margin-bottom: 1%;
+    text-align: left;
+    margin-top: 2%;
+    line-height: 5vw;
+
+}
+
+.client-app .content-page .invest-project-app .desc-page {
+
+    width: 95%;
+    font-size: 1.2vw;
+    color: #505050;
+    margin-bottom: 4%;
+    text-align: left;
+    line-height: 3vw;
+
+}
+
+.client-app .content-page .invest-project-app .cover{
+
+    width: 95%;
+    border-radius: 1.3vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25% 0;
+    margin-top: 3%;
+    box-shadow: 0 0 1vw 0 #00000016;
+
+}
+
+.client-app .content-page .invest-project-app .flex-sec{
+
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2% 0;
+
+}
+
+.client-app .content-page .invest-project-app .flex-sec .text{
+
+    width: 50%;
+    font-size: 1.3vw;
+    line-height: 2.7vw;
+    padding: 0 2%;
+
+}
+
+.client-app .content-page .invest-project-app .flex-sec .text span{
+
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #2b2b2b;
+
+}
+
+.client-app .content-page .invest-project-app .flex-sec .cvr{
+ 
+    width: 50%;
+    padding: 16% 0;
+    border-radius: 1vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.client-app .content-page .invest-project-app .ftr{
+
+    width: 95%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+
+}
+
+.client-app .content-page .invest-project-app .ftr .tl{
+
+    font-size: 1.6vw;
+    color: #000000;
+    padding-bottom: 2%;
+    border-bottom: 0.1vw solid #dcdcdc;
+
+}
+
+.client-app .content-page .invest-project-app .ftr .projects {
+
+    width: 100%;
+    margin-top: 1%;
+    display: inline-block;
+
+}
+
+.client-app .content-page .invest-project-app .ftr .projects .project {
+
+    width: 32%;
+    padding: 19% 0;
+    border-radius: 1vw;
+    background-color: white;
+    box-shadow: 0 0 0.5vw 0 #00000012;
+    position: relative;
+    float: left;
+    margin: 1% 0;
+    margin-left: 1%;
+
+}
+
+.client-app .content-page .invest-project-app .ftr .project .ctn {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.client-app .content-page .invest-project-app .ftr .project .image {
+
+    width: 90%;
+    height: 58%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5%;
+    margin-bottom: 0;
+    border-radius: 1vw;
+
+}
+
+
+.client-app .content-page .invest-project-app .ftr .project .title {
+
+    font-size: 1.7vw;
+    color: #232323;
+    font-weight: 600;
+    line-height: 2.8vw;
+    padding: 3% 5%;
+    padding-bottom: 0;
+    cursor: pointer;
+
+}
+
+.client-app .content-page .invest-project-app .ftr .project .title:hover {
+
+    color: #0d5357;
+    text-decoration: underline;
+
+}
+
+.client-app .content-page .invest-project-app .ftr .project .description {
+
+    font-size: 1.2vw;
+    line-height: 2.1vw;
+    margin-top: 2%;
+    padding: 0 5%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+/********************************************************************************************************/
+/****************************************** help & assistance *******************************************/
+/********************************************************************************************************/
+
+.client-app .content-page .help-app {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 8%;
+
+}
+
+.client-app .content-page .help-app .title {
+
+    width: 70%;
+    font-size: 4vw;
+    color: #202020;
+    margin-bottom: 2%;
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.client-app .content-page .help-app .sb {
+
+    width: 70%;
+    font-size: 1.5vw;
+    color: #505050;
+    margin-bottom: 4%;
+    text-align: center;
+
+}
+
+.client-app .content-page .help-app .blocks {
+
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.client-app .content-page .help-app .blocks .block {
+
+    width: 30%;
+    text-align: center;
+    /* background-color: white; */
+    padding: 4% 1%;
+    border-radius: 1vw;
+    transition: 0.2s;
+    border: 0.1vw solid #e2e2e2;
+
+}
+
+.client-app .content-page .help-app .blocks .block .nbr {
+
+    font-size: 3vw;
+    font-weight: 600;
+    color: #3b3b3b;
+
+}
+
+.client-app .content-page .help-app .blocks .block .tl {
+
+    font-size: 1.2vw;
+    margin: 3% 0;
+
+}
+
+.client-app .content-page .help-app .blocks .block .icon {
+
+    font-size: 3vw;
+    color: #10676c;
+
+}
+
+.client-app .content-page .help-app .tl-sec{
+
+    font-size: 2vw;
+    color: #1b1b1b;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 3%;
+
+}
+
+.client-app .content-page .help-app .item-qtn{
+
+    width: 60%;
+    border: 0.1vw solid #ebebeb;
+    padding: 1%;
+    border-radius: 0.4vw;
+    margin-bottom: 1%;
+
+}
+
+.client-app .content-page .help-app .item-qtn .tl{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    color: #2b2b2b;
+    cursor: pointer;
+
+}
+
+.client-app .content-page .help-app .item-qtn.active .tl .icon{
+
+    rotate: -180deg;
+
+}
+
+.client-app .content-page .help-app .item-qtn .desc{
+
+    font-size: 1.1vw;
+    margin-top: 3%;
+    color: #303030;
+    padding: 0 1%;
+    display: none;
+
+}
+
+.client-app .content-page .help-app .item-qtn.active .desc{
+
+    display: block;
 
 }

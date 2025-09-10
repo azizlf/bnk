@@ -1,12 +1,35 @@
-import { AfterViewInit, Component, Renderer2 } from '@angular/core';
+import { AfterViewInit, Component, OnInit, Renderer2 } from '@angular/core';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-investment',
   templateUrl: './investment.component.html',
   styleUrls: ['./investment.component.css']
 })
-export class InvestmentComponent {
+export class InvestmentComponent implements OnInit {
 
-  projects = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+  projects = [
+    {
+      id: "",
+      title: "",
+      description: "",
+      images: [
+        {
+          text: "",
+          img: "",
+          position:""
+        }
+      ],
+      cover: ""
+    }
+  ]
+
+  constructor(private projectService: ProjectService) { }
+
+  ngOnInit(): void {
+
+    this.projects = this.projectService.investments
+
+  }
 
 }

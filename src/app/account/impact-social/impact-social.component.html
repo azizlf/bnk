@@ -20,14 +20,13 @@
     </div>
     <div class="sec-title">
         <div class="tl">Récits & Témoignages</div>
-        <button>Investir avec impact</button>
     </div>
     <div class="projects">
         <div class="project" *ngFor="let project of projects">
             <div class="img"
                 style="background-image: url('{{project.img}}');">
             </div>
-            <div class="tl" [routerLink]="'/app/projet/'+project.id">{{project.title}}</div>
+            <div class="tl" [routerLink]="'/app/projet-social/'+project.id">{{project.title}}</div>
             <div class="desc"> {{project.description}} </div>
             <button [routerLink]="'/app/projet/'+project.id">voire plus</button>
         </div>

@@ -1,0 +1,44 @@
+<div [class]="openMessages ? 'chat-app active' : 'chat-app'">
+    <div [class]="openMessages ? 'container active' : 'container'">
+        <div class="istq" *ngIf="!openMessages">
+            <div class="main-icon">
+                <img src="/assets/img/chat.png" alt="">
+            </div>
+
+            <div class="main-title">
+                <h1>Bonjour Shayma</h1>
+                <h2>Comment puis-je vous aider aujourd'hui ?</h2>
+            </div>
+
+            <div class="feature-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-language"></i></div>
+                    <br>
+                    <h3>Generate True 4K Next-Gen Videos</h3>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <br>
+                    <h3>Generate Voiceovers, Music, or Sound Effects</h3>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <br>
+                    <h3>Interact with the Smartest Data Bot Ever</h3>
+                </div>
+            </div>
+        </div>
+        <div class="list-msgs" *ngIf="openMessages">
+            <div class="ctn">
+                <div [class]="msg.sender === 'chat' ? 'msg left':'msg right'" *ngFor="let msg of messages">
+                    <span>{{msg.msg}}</span>
+                </div>
+                <div class="thinking" *ngIf="isThinking"><i class="fa-solid fa-circle"></i></div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" #msinput placeholder="Ask me anything..." class="chat-input">
+            <button class="send-btn" (click)="sendMsg(msinput)">→</button>
+        </div>
+    </div>
+</div>

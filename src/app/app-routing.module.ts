@@ -22,6 +22,9 @@ import { FacturesComponent } from './account/factures/factures.component';
 import { WithdrawComponent } from './account/withdraw/withdraw.component';
 import { ImpactSocialComponent } from './account/impact-social/impact-social.component';
 import { ImpactSocialProjectComponent } from './account/impact-social-project/impact-social-project.component';
+import { InvestProjectComponent } from './account/invest-project/invest-project.component';
+import { HelpComponent } from './account/help/help.component';
+import { ChatComponent } from './account/chat/chat.component';
 
 const routes: Routes = [
 
@@ -82,8 +85,12 @@ const routes: Routes = [
         component: TransfertComponent
       },
       {
-        path: "invest",
+        path: "investments",
         component: InvestmentComponent
+      },
+      {
+        path: "project-invest/:id",
+        component: InvestProjectComponent
       },
       {
         path: "payement",
@@ -102,8 +109,16 @@ const routes: Routes = [
         component: ImpactSocialComponent
       },
       {
-        path: "projet/:id",
+        path: "projet-social/:id",
         component: ImpactSocialProjectComponent
+      },
+      {
+        path: "help",
+        component: HelpComponent
+      },
+      {
+        path: "chat",
+        component: ChatComponent
       },
       {
         path: "settings",

@@ -1,0 +1,38 @@
+<div class="invest-project-app">
+
+    <div class="cover" style="background-image: url('{{project.cover}}');"></div>
+
+    <div class="title-page">{{project.title}}</div>
+
+    <div class="desc-page">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus commodi et placeat ipsa sunt modi?
+        Accusamus esse in temporibus debitis repellat architecto deleniti sed maiores assumenda. Voluptas facere quod
+        illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus commodi et placeat ipsa sunt modi?
+        Accusamus esse in temporibus debitis repellat architecto deleniti sed maiores assumenda. Voluptas facere quod
+        illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus commodi et placeat ipsa sunt modi?
+        Accusamus esse in temporibus debitis repellat architecto deleniti sed maiores assumenda. Voluptas facere quod
+        illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus commodi et placeat ipsa sunt modi?
+        Accusamus esse in temporibus debitis repellat architecto deleniti sed maiores assumenda. Voluptas facere quod
+        illo.
+    </div>
+
+    <div class="flex-sec" *ngFor="let img of project.images">
+        <div class="text" *ngIf="img.position === 'left'" [innerHTML]="img.text"></div>
+        <div class="cvr" style="background-image: url('{{project.cover}}');"></div>
+        <div class="text" *ngIf="img.position === 'right'" [innerHTML]="img.text"></div>
+    </div>
+
+    <div class="ftr">
+        <div class="tl">Découvrir autres projets</div>
+        <div class="projects">
+            <div class="project" *ngFor="let project of projects">
+                <div class="ctn">
+                    <div class="image" style="background-image: url('{{project.cover}}');"></div>
+                    <div class="title" [routerLink]="'/app/project-invest/'+project.id">{{project.title}}</div>
+                    <div class="description">{{project.description}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

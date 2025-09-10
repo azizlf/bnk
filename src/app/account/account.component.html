@@ -7,7 +7,7 @@
             <div [class]="router === 'withdraw' ? 'item active':'item'" (click)="router = 'withdraw'" routerLink="/app/withdraw">Retirer d'argent</div>
             <div [class]="router === 'payement' ? 'item active':'item'" (click)="router = 'payement'" routerLink="/app/payement">Paiement factures</div>
             <div [class]="router === 'social' ? 'item active':'item'" (click)="router = 'social'" routerLink="/app/social">Impact Sociale</div>
-            <div [class]="router === 'invest' ? 'item active':'item'" (click)="router = 'invest'" routerLink="/app/invest">Investir</div>
+            <div [class]="router === 'investments' ? 'item active':'item'" (click)="router = 'investments'" routerLink="/app/investments">Projets INVEST</div>
             <div class="user" (click)="openMenuNav = !openMenuNav" >
                 <div class="img">
                     <ion-icon name="person-circle-outline"></ion-icon>
@@ -34,13 +34,21 @@
                 </div>
             </div>
         </div>
+        <div class="item" (click)="openMenuNav = false" routerLink="/app/settings/invest">
+            <div class="icon"><ion-icon name="arrow-up-circle-outline"></ion-icon></div>
+            <span>Investir</span>
+        </div>
         <div class="item" (click)="openMenuNav = false" routerLink="/app/settings/profile">
             <div class="icon"><ion-icon name="settings-outline"></ion-icon></div>
             <span>Paramétres</span>
         </div>
-        <div class="item" (click)="openMenuNav = false">
+        <div class="item" (click)="openMenuNav = false" routerLink="/app/help">
             <div class="icon"><ion-icon name="help-outline"></ion-icon></div>
             <span>Aide et Assistance</span>
+        </div>
+        <div class="item" (click)="openMenuNav = false" routerLink="/app/chat">
+            <div class="icon"><ion-icon name="logo-reddit"></ion-icon></div>
+            <span>AI Support</span>
         </div>
         <div class="item" (click)="openMenuNav = false">
             <div class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></div>
