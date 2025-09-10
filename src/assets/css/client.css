@@ -4,12 +4,10 @@
 
 ::-webkit-scrollbar-track {
     background: #eaeaea;
-    border-radius: 10000vw;
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--theme-color);
-    border-radius: 10000vw;
 }
 
 .client-app {
@@ -602,10 +600,38 @@
     width: 44%;
     padding: 12% 0;
     position: relative;
-    background-color: #0c565a;
-    background-color: #0a3e41;
-    background-image: linear-gradient(45deg, #0c565a 30%, #0a3e41 80%);
-    border-radius: 1vw;
+    background: #f9f9f9;
+    border: 0.1vw solid #eaeaea;
+    border-radius: 0.6vw;
+}
+
+
+.client-app .content-page .dashbord-app .sc .cards .crds .crd .status {
+
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    color: #1abac2;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    background-color: #1ca7af13;
+    border-radius: 1000000vw;
+    padding: 0.7% 4%;
+
+}
+
+.client-app .content-page .dashbord-app .sc .cards .crds .crd .status.warn {
+
+    color: #c27c1a;
+    background-color: #d2671613;
+
+}
+
+.client-app .content-page .dashbord-app .sc .cards .crds .crd .status.err {
+
+    color: #c21a1a;
+    background-color: #d2161613;
 
 }
 
@@ -624,7 +650,7 @@
     width: 80%;
     bottom: 10%;
     left: 6%;
-    color: white;
+    color: #2e2e2e;
     font-size: 1vw;
 
 }
@@ -639,9 +665,10 @@
 .client-app .content-page .dashbord-app .sc .cards .crds .crd .date {
 
     position: absolute;
-    top: 5%;
-    right: 4%;
-    color: white;
+    top: 6%;
+    right: 5%;
+    color: #2e2e2e;
+    font-weight: 600;
 
 }
 
@@ -1062,6 +1089,52 @@
 
 }
 
+.settings-account .content-pager .section .tlll {
+
+    font-size: 2.4vw;
+    font-weight: 600;
+    color: #323232;
+    margin-bottom: 2%;
+    text-align: left;
+    width: 90%;
+    margin-top: 4%;
+
+}
+
+.settings-account .content-pager .section .tlll.sc {
+
+    font-size: 2vw;
+
+}
+
+.settings-account .content-pager .section .btn {
+
+    padding: 2% 3%;
+    background-color: #148086;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+    margin-top: 1%;
+
+}
+
+.settings-account .content-pager .section .btn:hover {
+
+    background-color: #0d5357;
+
+}
+
+.settings-account .content-pager .section .descc {
+
+    font-size: 1.1vw;
+    color: #323232;
+    margin-bottom: 1%;
+    text-align: left;
+    width: 90%;
+
+}
+
+
 .settings-account .content-pager .section .title {
 
     width: 100%;
@@ -1256,56 +1329,240 @@
 
 }
 
+.settings-account .content-pager .banks {
+
+    width: 91%;
+    margin: 4% 4%;
+    margin-top: 3%;
+
+}
+
+.settings-account .content-pager .banks .item {
+
+    width: 100%;
+    border: 0.1vw solid #ececec;
+    font-size: 1.4vw;
+    color: #3a3a3a;
+    padding: 3% 4%;
+    margin-top: 1%;
+    position: relative;
+    background: #f9f9f9;
+    border: 0.1vw solid #eaeaea;
+    border-radius: 0.3vw;
+
+}
+
+.settings-account .content-pager .banks .item .tl {
+
+    font-size: 1.6vw;
+    margin-bottom: 4%;
+    display: flex;
+    align-items: center;
+
+}
+
+.settings-account .content-pager .banks .item .tl img {
+
+    width: 7%;
+    margin-right: 2%;
+
+}
+
+.settings-account .content-pager .banks .item .dt {
+
+    font-size: 1.1vw;
+    width: 100%;
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.settings-account .content-pager .banks .item .dt .st {
+
+    color: white;
+    font-size: 1.1vw;
+    background-color: #10bd64;
+    border-radius: 1000000vw;
+    padding: 0.3% 2%;
+
+}
+
+.settings-account .content-pager .banks .item .dt .st.wr {
+
+    background-color: #146cd1;
+
+}
+
+.settings-account .content-pager .banks .item .st.err {
+
+    background-color: #ba1212;
+
+}
+
+.settings-account .content-pager .banks .item .dt span {
+
+    padding-right: 3%;
+    font-weight: 600;
+
+}
+
+.settings-account .content-pager .banks .item .bt {
+
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+
+.settings-account .content-pager .banks .item .bt button {
+
+    padding: 2% 3.2%;
+    background-color: #0d9096;
+    font-size: 1.1vw;
+    margin-left: 4%;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+
+}
+
+.settings-account .content-pager .banks .item .bt button.err {
+
+    background-color: #d60d0d;
+
+}
+
+
 .settings-account .content-pager .cards {
 
-    width: 90%;
-    margin: 0 5%;
+    width: 91%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 4% 4%;
+    margin-top: 3%;
 
 }
 
 .settings-account .content-pager .cards .card-cs {
 
-    width: 47%;
-    display: flex;
-    align-items: center;
-    border: 0.1vw solid #ededed;
-    background-color: white;
-    border-radius: 0.7vw;
-    padding: 1% 2%;
+    width: 49%;
+    padding: 14% 0;
+    position: relative;
+    background: #f9f9f9;
+    border: 0.1vw solid #eaeaea;
+    border-radius: 0.6vw;
 
 }
 
-.settings-account .content-pager .cards .card-cs .icon {
+.settings-account .content-pager .cards .card-cs .status {
 
-    width: 17.2%;
-    padding: 4% 0;
-    background-color: #0d535725;
-    color: #147176;
-    border-radius: 100%;
-    text-align: center;
-    margin-right: 2%;
-    font-size: 2vw;
-    padding-bottom: 3%;
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    color: #1abac2;
+    font-size: 1.2vw;
+    background-color: #1ca7af13;
+    border-radius: 1000000vw;
+    padding: 1.3% 4%;
+
+}
+
+.settings-account .content-pager .cards .card-cs .status.warn {
+
+    color: #c27c1a;
+    background-color: #d2671613;
+
+}
+
+.settings-account .content-pager .cards .card-cs .status.err {
+
+    color: #c21a1a;
+    background-color: #d2161613;
 
 }
 
 .settings-account .content-pager .cards .card-cs .dt {
 
-    font-size: 1vw;
-    line-height: 1.9vw;
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 
 }
 
-.settings-account .content-pager .cards .card-cs .dt span {
+
+.settings-account .content-pager .cards .card-cs button {
+
+    padding: 3% 5.5%;
+    background-color: #0d9096;
+    font-size: 1.1vw;
+    margin-left: 4%;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+
+}
+
+.settings-account .content-pager .cards .card-cs button.err {
+
+    background-color: #d60d0d;
+
+}
+
+.settings-account .content-pager .cards .card-cs img {
+
+    position: absolute;
+    width: 10%;
+    bottom: 4%;
+    right: 3%;
+
+}
+
+.settings-account .content-pager .cards .card-cs img.logo {
+
+    top: 5%;
+    left: 5%;
+    width: 20%;
+
+}
+
+.settings-account .content-pager .cards .card-cs .ctn {
+
+    position: absolute;
+    width: 80%;
+    bottom: 10%;
+    left: 6%;
+    color: #383838;
+    font-size: 1vw;
+
+}
+
+.settings-account .content-pager .cards .card-cs .ctn .number {
 
     font-size: 1.3vw;
-    color: #232323;
     font-weight: 600;
 
 }
+
+.settings-account .content-pager .cards .card-cs .date {
+
+    color: #383838;
+    font-weight: 600;
+
+}
+
 
 
 /***********************************************************************************************/

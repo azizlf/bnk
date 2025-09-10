@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class WalletComponent {
 
   cardImage = "card"
+  openAddCard = false
 
   detectCardType(e:any): void {
 

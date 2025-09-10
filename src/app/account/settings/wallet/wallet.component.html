@@ -1,8 +1,81 @@
 <div class="page">
-    <div class="section">
+    <div class="section" *ngIf="!openAddCard">
         <div class="title">
-            <div class="icon"><ion-icon name="arrow-back"></ion-icon></div>
-            <span>Ajouter une carte bancaire</span>
+            <div class="icon"><ion-icon name="card-outline"></ion-icon></div>
+            <span>Mes cartes bancaires</span>
+        </div>
+        <div class="tlll">Gérer vos cartes bancaire</div>
+        <div class="descc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse at animi hic quas harum quis mollitia vero
+            rem, aliquid, ea ex architecto reprehenderit necessitatibus nam illo numquam ipsa doloremque corrupti.
+            <br>
+            <button class="btn" (click)="openAddCard = true">Ajouter une carte bancaire</button>
+        </div>
+        <div class="cards">
+            <div class="card-cs">
+                <div class="status">Active</div>
+                <img src="/assets/img/poste.png" alt="" class="logo">
+                <div class="ctn">
+                    <div class="number">1234 5678 9012 3456</div>
+                    <div class="holder">Shayma Ghuidhaoui</div>
+                </div>
+                <div class="dt">
+                    <button class="err"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+                <img src="/assets/img/master.png" alt="">
+            </div>
+            <div class="card-cs">
+                <div class="status err">Inactive</div>
+                <div class="ctn">
+                    <div class="number">1234 5678 9012 3456</div>
+                    <div class="holder">Shayma Ghuidhaoui</div>
+                </div>
+                <div class="dt">
+                    <button class="err"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+                <img src="/assets/img/visa.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section" *ngIf="openAddCard">
+        <div class="title">
+            <div class="icon" (click)="openAddCard = false"><ion-icon name="arrow-back"></ion-icon></div>
+            <span>Ajouter une carte bancaires</span>
+        </div>
+        <div class="bankcard">
+            <img [src]="'/assets/img/'+cardImage+'.png'" alt="">
+        </div>
+        <div class="input">
+            <div class="lbl">Numero de la carte</div>
+            <input type="number" (input)="detectCardType($event)" placeholder="1234 6789 1011 1213">
+        </div>
+        <div class="input">
+            <div class="lbl">Titulaire de la carte</div>
+            <input type="number" placeholder="titulaire de la carte">
+        </div>
+        <div class="flex-inputs">
+            <div class="input">
+                <div class="lbl">Date d'expiration</div>
+                <input type="number" placeholder="01/25">
+            </div>
+            <div class="input">
+                <div class="lbl">CVV / CVC</div>
+                <input type="password" placeholder="cvv / cvc">
+            </div>
+        </div>
+        <div class="desc">
+            <ul>
+                <li>La carte utilisée doit être activée pour les paiements en ligne.</li>
+                <li>Un montant de 1 $ sera temporairement débité pour vérifier la validité de la carte.</li>
+                <li>La carte doit disposer d'un solde suffisant pour effectuer la vérification.</li>
+            </ul>
+        </div>
+        <button class="sec-btn">Ajouter</button>
+    </div>
+    <div class="section" *ngIf="openAddCard">
+        <div class="title">
+            <div class="icon" (click)="openAddCard = false"><ion-icon name="arrow-back"></ion-icon></div>
+            <span>Ajouter une carte bancaires</span>
         </div>
         <div class="bankcard">
             <img [src]="'/assets/img/'+cardImage+'.png'" alt="">
