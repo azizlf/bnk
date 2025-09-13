@@ -1,0 +1,201 @@
+<div class="invest-form">
+    <div class="flex-welcome" *ngIf="stepForm === 'flexs'">
+        <div class="title">
+            <div class="gr">Convertissez votre argent en projet réel</div>
+            <div class="pt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque id ab nostrum dolore, pariatur nulla
+                itaque, esse assumenda nesciunt veniam, temporibus fugit at unde quidem error deleniti fuga placeat
+                omnis?
+            </div>
+        </div>
+        <div class="boxs">
+            <div [class]="category === 'invest' ? 'box active':'box'" (click)="category = 'invest'">
+                <div class="round">
+                    <div class="off"><ion-icon name="radio-button-off-outline"></ion-icon></div>
+                    <div class="on"><ion-icon name="radio-button-on-outline"></ion-icon></div>
+                </div>
+                <img src="/assets/img/invest.png" alt="logo">
+                <div class="tl">Investir et Gagner</div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quis facilis a illum dignissimos
+                    officia molestiae, culpa consequuntur
+                </div>
+            </div>
+            <div [class]="category === 'impact' ? 'box active':'box'" (click)="category = 'impact'">
+                <div class="round">
+                    <div class="off"><ion-icon name="radio-button-off-outline"></ion-icon></div>
+                    <div class="on"><ion-icon name="radio-button-on-outline"></ion-icon></div>
+                </div>
+                <img src="/assets/img/impact.png" alt="logo">
+                <div class="tl">Impact Social</div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quis facilis a illum dignissimos
+                    officia molestiae, culpa consequuntur
+                </div>
+            </div>
+        </div>
+        <div class="ft-btns">
+            <button [class]="this.category === '' ? 'disable' : ''" (click)="stepForm='prjs'">continuer</button>
+        </div>
+    </div>
+    <div class="prjs" *ngIf="stepForm === 'prjs'">
+        <div class="title">
+            <div class="gr">Convertissez votre argent en projet réel</div>
+            <div class="pt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque id ab nostrum dolore, pariatur nulla
+                itaque, esse assumenda nesciunt veniam, temporibus fugit at unde quidem error deleniti fuga placeat
+                omnis?
+            </div>
+        </div>
+
+        <div class="tl-section">Choisire un projet</div>
+        <div class="projects">
+            <div [class]="projectSelected === project.id ? 'project active' : 'project'"
+                *ngFor="let project of projects" (click)="projectSelected = project.id">
+                <div class="ctn">
+                    <div class="image" style="background-image: url('{{project.cover}}');"></div>
+                    <div class="title">{{project.title}}</div>
+                    <div class="description">{{project.description}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-btns">
+            <button (click)="stepForm='flexs'">retour</button>
+            <button [class]="this.projectSelected === '' ? 'disable' : ''" (click)="stepForm='budget'">continuer</button>
+        </div>
+    </div>
+    <div class="budget" *ngIf="stepForm === 'budget'">
+        <div class="title">
+            <div class="gr">Convertissez votre argent en projet réel</div>
+            <div class="pt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque id ab nostrum dolore, pariatur nulla
+                itaque, esse assumenda nesciunt veniam, temporibus fugit at unde quidem error deleniti fuga placeat
+                omnis?
+            </div>
+        </div>
+        <div class="tl-section">Choisire votre budget</div>
+        <div class="flex-cards">
+            <div class="crd">
+                <span [class]="budgetSelected === bdg ? 'active':''" *ngFor="let bdg of budgets"
+                    (click)="budgetSelected = bdg">{{bdg}} DT</span>
+            </div>
+            <div class="crd">
+                <div class="ttl">Revenus</div>
+                <div class="nbr">12350 DT</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius doloremque est eos adipisci
+                    recusandae saepe! Itaque reprehenderit a quia atque repellendus temporibus.
+                </p>
+            </div>
+        </div>
+        <div class="ft-btns">
+            <button (click)="stepForm='prjs'">retour</button>
+            <button [class]="this.budgetSelected === 0 ? 'disable' : ''" (click)="stepForm='confirm'">continuer</button>
+        </div>
+    </div>
+    <div class="confirm" *ngIf="stepForm === 'confirm'">
+        <div class="section">
+            <div class="title">Confirmation et Paiement</div>
+            <div class="sec-title">Informations Personelles</div>
+            <div class="flexs">
+                <div class="dt">
+                    <div class="lbl">Nom</div>
+                    <div class="vl">Shayma</div>
+                </div>
+                <div class="dt">
+                    <div class="lbl">Prénom</div>
+                    <div class="vl">Ghuidhaoui</div>
+                </div>
+            </div>
+            <div class="flexs">
+                <div class="dt">
+                    <div class="lbl">ID</div>
+                    <div class="vl">Shayma_Ghuidhaoui</div>
+                </div>
+                <div class="dt">
+                    <div class="lbl">Budget</div>
+                    <div class="vl">12300 DT</div>
+                </div>
+            </div>
+            <div class="sec-title">Payer avec ( Carte Bancaire )</div>
+            <div class="cards">
+                <div [class]="cardSelected === '1' ? 'card-cs active' : 'card-cs'" (click)="cardSelected = '1'">
+                    <div class="round">
+                        <div class="off"><ion-icon name="radio-button-off-outline"></ion-icon></div>
+                        <div class="on"><ion-icon name="radio-button-on-outline"></ion-icon></div>
+                    </div>
+                    <div class="ctn">
+                        <div class="number">1234 5678 9012 3456</div>
+                        <div class="holder">Shayma Ghuidhaoui</div>
+                    </div>
+                    <div class="date">07/28</div>
+                    <img src="/assets/img/master.png" alt="">
+                </div>
+                <div [class]="cardSelected === '2' ? 'card-cs active' : 'card-cs'" (click)="cardSelected = '2'">
+                    <div class="round">
+                        <div class="icon off"><ion-icon name="radio-button-off-outline"></ion-icon></div>
+                        <div class="icon on"><ion-icon name="radio-button-on-outline"></ion-icon></div>
+                    </div>
+                    <div class="ctn">
+                        <div class="number">1234 5678 9012 3456</div>
+                        <div class="holder">Shayma Ghuidhaoui</div>
+                    </div>
+                    <div class="date">07/28</div>
+                    <img src="/assets/img/visa.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="sec-title" style="margin-top: 3%;">Projet Sélectionné</div>
+            <div class="project-view">
+                <div class="img"
+                    style="background-image: url('https://img.freepik.com/photos-premium/close-up-deux-hommes-affaires-se-serrant-main-ordinateurs-portables-bureau_947794-35999.jpg');">
+                </div>
+                <div class="dt">
+                    <div class="tll">Micro-investissements solidaires</div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus, esse dolor quam
+                        molestiae ipsum accusantium quia laboriosam, voluptas et sequi nisi minima qui, praesentium
+                        quos! Ducimus nemo maxime nisi.
+                    </p>
+                </div>
+            </div>
+            <div class="sec-title">Revenus</div>
+            <div class="earn-details">
+                <div class="item">
+                    <div class="t">Budget</div>
+                    <div class="v">123000 DT</div>
+                </div>
+                <div class="item">
+                    <div class="t">Frais</div>
+                    <div class="v">120 DT (1%)</div>
+                </div>
+                <div class="item">
+                    <div class="t">Net</div>
+                    <div class="v">113400 DT</div>
+                </div>
+            </div>
+            <button [class]="this.cardSelected === '' ? 'disable' : ''" (click)="confirmPay()">confirmer et payer</button>
+        </div>
+    </div>
+</div>
+<div class="loader-wrap" [ngStyle]="{'display': openLoading ? 'block':'none'}">
+    <div class="preloader">
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div [class]="openMessage ? 'messagebox active':'messagebox'">
+    <div class="box">
+        <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="tl">{{titleMessage}}</div>
+        <div class="desc">
+            {{descMessage}}
+        </div>
+        <button (click)="openMessage = false" >D'accord</button>
+    </div>
+</div>

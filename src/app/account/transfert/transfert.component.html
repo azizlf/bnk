@@ -5,27 +5,27 @@
                 Un transfert <span>plus rapide</span>, plus <span>simple</span> et plus sûr
             </div>
             <div class="item">
-                <div class="icon"><ion-icon name="information-circle-outline"></ion-icon></div>
-                <div class="tl">Frais de transaction</div>
+                <div class="icon"><ion-icon name="speedometer-outline"></ion-icon></div>
+                <div class="tl">Rapidité de traitement</div>
                 <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in, commodi eveniet nihil
-                    necessitatibus cum quae temporibus repellendus.
+                    Nos solutions garantissent un traitement instantané de vos opérations. Chaque transfert est optimisé
+                    pour réduire le temps d'attente et assurer une expérience fluide.
                 </div>
             </div>
             <div class="item">
-                <div class="icon"><ion-icon name="card-outline"></ion-icon></div>
-                <div class="tl">Frais de transaction</div>
+                <div class="icon"><ion-icon name="sparkles-outline"></ion-icon></div>
+                <div class="tl">Simplicité d'utilisation</div>
                 <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in, commodi eveniet nihil
-                    necessitatibus cum quae temporibus repellendus.
+                    Avec une interface claire et intuitive, vous pouvez effectuer vos transferts en quelques clics
+                    seulement, sans étapes compliquées ni procédures longues.
                 </div>
             </div>
             <div class="item">
-                <div class="icon"><ion-icon name="bar-chart-outline"></ion-icon></div>
-                <div class="tl">Frais de transaction</div>
+                <div class="icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+                <div class="tl">Sécurité renforcée</div>
                 <div class="des">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in, commodi eveniet nihil
-                    necessitatibus cum quae temporibus repellendus.
+                    Toutes vos données sont protégées grâce aux protocoles de sécurité les plus avancés, assurant la
+                    confidentialité et la fiabilité de chaque transaction.
                 </div>
             </div>
         </div>
@@ -48,9 +48,30 @@
                 </div>
                 <textarea rows="5" placeholder="Message ...."></textarea>
             </div>
-            <button>
+            <button (click)="sendMoney()">
                 <span>envoyer</span>
             </button>
         </div>
+    </div>
+</div>
+
+<div class="loader-wrap" [ngStyle]="{'display': openLoading ? 'block':'none'}">
+    <div class="preloader">
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div [class]="openMessage ? 'messagebox active':'messagebox'">
+    <div class="box">
+        <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="tl">{{titleMessage}}</div>
+        <div class="desc">
+            {{descMessage}}
+        </div>
+        <button (click)="openMessage = false" >D'accord</button>
     </div>
 </div>

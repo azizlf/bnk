@@ -1,0 +1,29 @@
+<div class="history-app">
+    <div class="title">Historiques de vos operations</div>
+    <div class="sb">Consultez la liste complète de vos transactions passées et suivez l'état de vos opérations.</div>
+    <div class="btns">
+        <button (click)="downloadFile()" >
+            <div class="icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+            <span>Télécharger un extrait</span>
+        </button>
+    </div>
+    <div class="table-cs">
+        <div class="titles">
+            <div class="it">Date</div>
+            <div class="it gr">Libellé</div>
+            <div class="it">Montant</div>
+            <div class="it">Statut</div>
+        </div>
+        <div class="item" *ngFor="let hist of historys">
+            <div class="it">{{hist.date}}</div>
+            <div class="it gr">{{hist.libelle}}</div>
+            <div class="it">{{hist.montant}} DT</div>
+            <div class="it">
+                <span class="scc" *ngIf="hist.status === 1" >Succés</span>
+                <span class="pend" *ngIf="hist.status === 2" >En attend</span>
+                <span class="prog" *ngIf="hist.status === 3" >En cours de traitement</span>
+                <span class="ref" *ngIf="hist.status === 0" >Echoué</span>
+            </div>
+        </div>
+    </div>
+</div>

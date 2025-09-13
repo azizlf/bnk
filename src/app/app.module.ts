@@ -29,6 +29,8 @@ import { ImpactSocialProjectComponent } from './account/impact-social-project/im
 import { InvestProjectComponent } from './account/invest-project/invest-project.component';
 import { HelpComponent } from './account/help/help.component';
 import { ChatComponent } from './account/chat/chat.component';
+import { InvestFormComponent } from './account/invest-form/invest-form.component';
+import { HistoryComponent } from './account/history/history.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,8 @@ import { ChatComponent } from './account/chat/chat.component';
     InvestProjectComponent,
     HelpComponent,
     ChatComponent,
+    InvestFormComponent,
+    HistoryComponent,
   ],
   imports: [
     BrowserModule,
