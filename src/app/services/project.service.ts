@@ -28,15 +28,18 @@ export class ProjectService {
       prj: [
         {
           img: "https://tse4.mm.bing.net/th/id/OIP.jqRLWSe3R3Fha_QFA0PP2gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-          title: "écoles rurales construites"
+          title: "écoles rurales construites",
+          desc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quos fugit ex nulla voluptate aperiam iure quaerat molestias deserunt sapiente sequi vel"
         },
         {
           img: "https://tse4.mm.bing.net/th/id/OIP.jqRLWSe3R3Fha_QFA0PP2gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-          title: "Distribution de fournitures scolaires"
+          title: "Distribution de fournitures scolaires",
+          desc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quos fugit ex nulla voluptate aperiam iure quaerat molestias deserunt sapiente sequi vel"
         },
         {
           img: "https://tse4.mm.bing.net/th/id/OIP.jqRLWSe3R3Fha_QFA0PP2gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-          title: "Accés au digital et à l'e-learning"
+          title: "Accés au digital et à l'e-learning",
+          desc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quos fugit ex nulla voluptate aperiam iure quaerat molestias deserunt sapiente sequi vel"
         }
       ],
       comments: [
@@ -76,15 +79,18 @@ export class ProjectService {
       prj: [
         {
           img: "https://tse3.mm.bing.net/th/id/OIP.eZp7PXXwLU0f1iJQH1DRSAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-          title: "Cliniques établies"
+          title: "Cliniques établies",
+          desc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quos fugit ex nulla voluptate aperiam iure quaerat molestias deserunt sapiente sequi vel"
         },
         {
           img: "https://tse3.mm.bing.net/th/id/OIP.eZp7PXXwLU0f1iJQH1DRSAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-          title: "Vaccinations"
+          title: "Vaccinations",
+          desc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quos fugit ex nulla voluptate aperiam iure quaerat molestias deserunt sapiente sequi vel"
         },
         {
           img: "https://tse3.mm.bing.net/th/id/OIP.eZp7PXXwLU0f1iJQH1DRSAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-          title: "Sensibilisations"
+          title: "Sensibilisations",
+          desc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quos fugit ex nulla voluptate aperiam iure quaerat molestias deserunt sapiente sequi vel"
         }
       ],
       comments: [

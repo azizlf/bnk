@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="boxs">
-            <div [class]="category === 'invest' ? 'box active':'box'" (click)="category = 'invest'">
+            <div [class]="category === 'invest' ? 'box active':'box'" (click)="category = 'invest';getProjects()">
                 <div class="round">
                     <div class="off"><ion-icon name="radio-button-off-outline"></ion-icon></div>
                     <div class="on"><ion-icon name="radio-button-on-outline"></ion-icon></div>
@@ -21,7 +21,7 @@
                     officia molestiae, culpa consequuntur
                 </div>
             </div>
-            <div [class]="category === 'impact' ? 'box active':'box'" (click)="category = 'impact'">
+            <div [class]="category === 'impact' ? 'box active':'box'" (click)="category = 'impact';getProjects()">
                 <div class="round">
                     <div class="off"><ion-icon name="radio-button-off-outline"></ion-icon></div>
                     <div class="on"><ion-icon name="radio-button-on-outline"></ion-icon></div>
@@ -50,18 +50,20 @@
 
         <div class="tl-section">Choisire un projet</div>
         <div class="projects">
-            <div [class]="projectSelected === project.id ? 'project active' : 'project'"
-                *ngFor="let project of projects" (click)="projectSelected = project.id">
+            <div [class]="projectSelected === index+'' ? 'project active' : 'project'"
+                *ngFor="let project of projects,let index = index" (click)="projectSelected = index+''">
                 <div class="ctn">
-                    <div class="image" style="background-image: url('{{project.cover}}');"></div>
+                    <div class="image"
+                        style="background-image: url('{{project.cover ? project.cover : project.img}}');"></div>
                     <div class="title">{{project.title}}</div>
-                    <div class="description">{{project.description}}</div>
+                    <div class="description">{{project.description ? project.description : project.desc}}</div>
                 </div>
             </div>
         </div>
         <div class="ft-btns">
             <button (click)="stepForm='flexs'">retour</button>
-            <button [class]="this.projectSelected === '' ? 'disable' : ''" (click)="stepForm='budget'">continuer</button>
+            <button [class]="this.projectSelected === '' ? 'disable' : ''"
+                (click)="stepForm='budget'">continuer</button>
         </div>
     </div>
     <div class="budget" *ngIf="stepForm === 'budget'">
@@ -77,14 +79,19 @@
         <div class="flex-cards">
             <div class="crd">
                 <span [class]="budgetSelected === bdg ? 'active':''" *ngFor="let bdg of budgets"
-                    (click)="budgetSelected = bdg">{{bdg}} DT</span>
+                    (click)="budgetSelected = bdg;calculate(bdg)">{{bdg}} DT</span>
             </div>
             <div class="crd">
                 <div class="ttl">Revenus</div>
-                <div class="nbr">12350 DT</div>
+                <div class="nbr">{{earns}} DT</div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius doloremque est eos adipisci
-                    recusandae saepe! Itaque reprehenderit a quia atque repellendus temporibus.
+                    Vos revenus se calculent automatiquement à hauteur de 3% du budget investi.
+                    Cela signifie que pour chaque montant que vous investissez, vous gagnez un revenu supplémentaire
+                    de 3%.
+                    <br>
+                    Revenus = Budget investi x 3%
+                    <br>
+                    Total = Budget investi + Revenus
                 </p>
             </div>
         </div>
@@ -175,7 +182,8 @@
                     <div class="v">113400 DT</div>
                 </div>
             </div>
-            <button [class]="this.cardSelected === '' ? 'disable' : ''" (click)="confirmPay()">confirmer et payer</button>
+            <button [class]="this.cardSelected === '' ? 'disable' : ''" (click)="confirmPay()">confirmer et
+                payer</button>
         </div>
     </div>
 </div>
@@ -196,6 +204,6 @@
         <div class="desc">
             {{descMessage}}
         </div>
-        <button (click)="openMessage = false" >D'accord</button>
+        <button (click)="openMessage = false">D'accord</button>
     </div>
 </div>

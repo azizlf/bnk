@@ -28,25 +28,19 @@ export class InvestFormComponent implements OnInit {
   budgetSelected = 0
   openLoading = false
 
-  projects = [
-    {
-      id: "",
-      title: "",
-      description: "",
-      images: [
-        {
-          text: "",
-          img: "",
-          position: ""
-        }
-      ],
-      cover: ""
-    }
-  ]
+  projects: any = []
 
   titleMessage = "Paiement Réussi"
   descMessage = "Votre paiement a été effectué avec succès. Merci pour votre confiance."
   openMessage = false
+
+  earns = 0
+  
+  calculate(bdg:any){
+
+    this.earns = bdg + (bdg*0.03)
+
+  }
 
   confirmPay() {
     this.openLoading = true
@@ -58,10 +52,28 @@ export class InvestFormComponent implements OnInit {
 
   constructor(private projectService: ProjectService) { }
 
-  ngOnInit(): void {
+  getProjects() {
 
-    this.projects = this.projectService.investments
+    if (this.category === "invest") {
+
+      this.projects = this.projectService.investments
+
+    } else {
+
+      let projs:any = []
+
+      this.projectService.projects.forEach((e)=>{
+
+        projs.push(...e.prj)
+
+      })
+      
+      this.projects = projs
+
+    }
 
   }
+
+  ngOnInit(): void { }
 
 }

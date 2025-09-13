@@ -78,6 +78,27 @@
                 <li>Lorem ipsum dolor sit amet consectetur</li>
             </ul>
         </div>
-        <button>retirer</button>
+        <button (click)="withdraw()" >retirer</button>
+    </div>
+</div>
+
+<div class="loader-wrap" [ngStyle]="{'display': openLoading ? 'block':'none'}">
+    <div class="preloader">
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div [class]="openMessage ? 'messagebox active':'messagebox'">
+    <div class="box">
+        <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="tl">{{titleMessage}}</div>
+        <div class="desc">
+            {{descMessage}}
+        </div>
+        <button (click)="openMessage = false">D'accord</button>
     </div>
 </div>
