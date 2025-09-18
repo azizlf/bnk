@@ -19,6 +19,13 @@ export class HomeComponent implements AfterViewInit {
     });
   }
 
+  loadPage() {
+    setTimeout(() => {
+      location.reload()
+      alert("fdsfsd")
+    }, 2000);
+  }
+
   async ngAfterViewInit() {
     const scripts = [
       'assets/js/jquery.js',
@@ -38,6 +45,7 @@ export class HomeComponent implements AfterViewInit {
     for (let src of scripts) {
       await this.loadScript("/" + src);
     }
+
   }
 
 }
