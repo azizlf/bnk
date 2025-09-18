@@ -1,6 +1,10 @@
 <div class="impact-social-app">
     <div class="title">Notre impact social</div>
-    <div class="sb">Suivez en temps réel comment vos investissements changent des vies</div>
+    <div class="sb">
+        ImpactBank combine innovation financière et engagement social. Grâce à notre plateforme, chaque investissement
+        ne génère pas seulement un rendement, mais contribue également à transformer des vies dans les régions qui en
+        ont le plus besoin.
+    </div>
     <div class="blocks">
         <div class="block">
             <div class="nbr">150</div>
@@ -23,12 +27,11 @@
     </div>
     <div class="projects">
         <div class="project" *ngFor="let project of projects">
-            <div class="img"
-                style="background-image: url('{{project.img}}');">
+            <div class="img" style="background-image: url('{{project.img}}');">
             </div>
             <div class="tl" [routerLink]="'/app/projet-social/'+project.id">{{project.title}}</div>
             <div class="desc"> {{project.description}} </div>
-            <button [routerLink]="'/app/projet/'+project.id">voire plus</button>
+            <button [routerLink]="'/app/projet-social/'+project.id">voire plus</button>
         </div>
     </div>
 </div>

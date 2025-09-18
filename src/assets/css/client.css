@@ -1698,6 +1698,11 @@
     padding: 3% 5%;
     padding-bottom: 0;
     cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 
@@ -3158,6 +3163,11 @@
     line-height: 2.8vw;
     padding: 3% 5%;
     padding-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 
@@ -3710,7 +3720,7 @@
 
 }
 
-.client-app .content-page .history-app .table-cs .item .it span{
+.client-app .content-page .history-app .table-cs .item .it span {
 
     padding: 4% 7%;
     color: white;
@@ -3719,31 +3729,31 @@
 
 }
 
-.client-app .content-page .history-app .table-cs .item .it span.scc{
+.client-app .content-page .history-app .table-cs .item .it span.scc {
 
     background-color: #099c17;
 
 }
 
-.client-app .content-page .history-app .table-cs .item .it span.pend{
+.client-app .content-page .history-app .table-cs .item .it span.pend {
 
     background-color: #d0860e;
 
 }
 
-.client-app .content-page .history-app .table-cs .item .it span.prog{
+.client-app .content-page .history-app .table-cs .item .it span.prog {
 
     background-color: #0e5bd0;
 
 }
 
-.client-app .content-page .history-app .table-cs .item .it span.ref{
+.client-app .content-page .history-app .table-cs .item .it span.ref {
 
     background-color: #dd2911;
 
 }
 
-.client-app .content-page .history-app .btns{
+.client-app .content-page .history-app .btns {
 
     width: 90%;
     margin: 2% 5%;
@@ -3753,7 +3763,7 @@
 
 }
 
-.client-app .content-page .history-app .btns button{
+.client-app .content-page .history-app .btns button {
 
     width: 18%;
     padding: 1% 0;
@@ -3768,14 +3778,14 @@
 
 }
 
-.client-app .content-page .history-app .btns button .icon{
+.client-app .content-page .history-app .btns button .icon {
 
     font-size: 1.5vw;
     margin-right: 3%;
 
 }
 
-.client-app .content-page .history-app .btns button:hover{
+.client-app .content-page .history-app .btns button:hover {
 
     background-color: #0d5357;
 

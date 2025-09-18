@@ -6,6 +6,28 @@ import { AfterViewInit, Component, Renderer2 } from '@angular/core';
   styleUrls: ['./acc.component.css']
 })
 export class AccComponent implements AfterViewInit {
+
+  testimonials = [
+    {
+      name:"Mohamed, 29 ans",
+      rate:5,
+      text:"ImpactBank m'a permis d'envoyer de l'argent en Tunisie rapidement et à moindre coût. Très pratique !",
+      img:"/assets/images/resource/testimonial-1.png"
+    },
+    {
+      name:"Syrine, 24 ans",
+      rate:4,
+      text:"Application facile à utiliser, j'adore la transparence et la rapidité des transactions.",
+      img:"/assets/images/resource/testimonial-2.png"
+    },
+    {
+      name:"Yassine, 35 ans",
+      rate:5,
+      text:"Enfin une solution fiable pour transférer de l'argent à ma famille et gérer mes dépenses depuis la France.",
+      img:"/assets/images/resource/testimonial-3.png"
+    }
+  ]
+
   constructor(private renderer: Renderer2) { }
 
   private loadScript(src: string): Promise<void> {

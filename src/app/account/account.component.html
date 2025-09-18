@@ -3,7 +3,7 @@
         <img src="/assets/img/logo.png" alt="" class="logo">
         <div class="menu">
             <div [class]="router === '' ? 'item active':'item'" (click)="router = ''"  routerLink="/app/">Acceuil</div>
-            <div [class]="router === 'transfert' ? 'item active':'item'" (click)="router = 'transfert'" routerLink="/app/transfert">Envoyer / Reçevoir</div>
+            <div [class]="router === 'transfert' ? 'item active':'item'" (click)="router = 'transfert'" routerLink="/app/transfert">Envoyer d'argent</div>
             <div [class]="router === 'withdraw' ? 'item active':'item'" (click)="router = 'withdraw'" routerLink="/app/withdraw">Retirer d'argent</div>
             <div [class]="router === 'payement' ? 'item active':'item'" (click)="router = 'payement'" routerLink="/app/payement">Paiement factures</div>
             <div [class]="router === 'social' ? 'item active':'item'" (click)="router = 'social'" routerLink="/app/social">Impact Sociale</div>
@@ -13,7 +13,7 @@
                     <ion-icon name="person-circle-outline"></ion-icon>
                 </div>
                 <div class="dt">
-                    <div class="name">Shayma Ghuidhaoui</div>
+                    <div class="name">Olivia Brown</div>
                     <div class="solde">Solde : 1294389000 DT</div>
                 </div>
                 <div class="icon">
@@ -28,8 +28,8 @@
                 <div class="dt">
                     <img src="/assets/img/profile-pic.png" alt="img" />
                     <div class="name">
-                        <p>Shayma Ghuidhaoui</p>
-                        <span>ID: shayma_ghuidhaoui2134</span>
+                        <p>Olivia Brown</p>
+                        <span>ID: olivia_brown</span>
                     </div>
                 </div>
             </div>
@@ -54,10 +54,6 @@
             <div class="icon"><ion-icon name="logo-reddit"></ion-icon></div>
             <span>AI Support</span>
         </div>
-        <!-- <div class="item" (click)="openMenuNav = false">
-            <div class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></div>
-            <span>Donner votre avis</span>
-        </div> -->
         <div class="item" (click)="openMenuNav = false">
             <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
             <span>Se déconnecter</span>

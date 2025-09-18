@@ -2,7 +2,7 @@
     <div class="banks">
         <div class="title">Compte Bancaire</div>
         <div class="sb">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, fugiat consequuntur.
+            Choisissez votre compte et effectuez un retrait rapide, simple et sécurisé.
         </div>
         <div [class]="bankChecked === 'attijari' ? 'item active' : 'item' " (click)="bankChecked = 'attijari'">
             <div class="round">
@@ -15,7 +15,7 @@
             </div>
             <div class="dt">
                 <span>Titulaire du compte : </span>
-                Shayma Ghuidhaoui
+                Olivia Brown
             </div>
             <div class="dt">
                 <span>RIB : </span>
@@ -37,7 +37,7 @@
             </div>
             <div class="dt">
                 <span>Titulaire du compte : </span>
-                Shayma Ghuidhaoui
+                Olivia Brown
             </div>
             <div class="dt">
                 <span>RIB : </span>
@@ -52,7 +52,8 @@
     <div class="form">
         <div class="title">Retrait de l'argent</div>
         <div class="sb">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, fugiat consequuntur.
+            Accédez facilement à vos fonds en toute sécurité. Choisissez le montant, validez, et récupérez votre argent
+            instantanément.
         </div>
         <div class="money-dt">
             <div class="item">
@@ -71,14 +72,12 @@
         </div>
         <div class="rq">
             <ul>
-                <li>Lorem ipsum dolor sit amet Perferendis, suscipit in.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, suscipit in.</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing suscipit in.</li>
-                <li>Lorem ipsum dolor sit amet consectetur</li>
+                <li>Vérifiez que votre compte dispose d'un solde suffisant pour le retrait.</li>
+                <li>Sélectionnez le montant exact que vous souhaitez retirer.</li>
+                <li>Confirmez votre retrait et assurez-vous que les informations de votre compte sont correctes.</li>
             </ul>
         </div>
-        <button (click)="withdraw()" >retirer</button>
+        <button (click)="withdraw()">retirer</button>
     </div>
 </div>
 

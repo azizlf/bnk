@@ -1,9 +1,10 @@
 <div class="help-app">
     <div class="title">Aide et Assistance</div>
     <div class="sb">
-        ImpactBank soutient des projets éducatifs en Afrique pour donner aux
-        enfants un meilleur avenir grâce à l'acces à l'école, aux fournitures et
-        aux formations.
+        Besoin d'aide ? Contactez notre support pour toute question concernant vos comptes, cartes, paiements ou projets
+        sociaux. 
+        <br>
+        Nous sommes là pour vous aider rapidement.
     </div>
     <div class="blocks">
         <div class="block">
@@ -21,7 +22,7 @@
     </div>
     <div class="tl-sec">Questions Fréquentes</div>
     <div [class]="question === qtn.question ? 'item-qtn active' : 'item-qtn'" *ngFor="let qtn of questions">
-        <div class="tl" (click)="question = question === '' ? qtn.question : ''" >
+        <div class="tl" (click)="question = question === '' ? qtn.question : ''">
             <span>{{qtn.question}}</span>
             <div class="icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
         </div>

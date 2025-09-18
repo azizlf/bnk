@@ -4,17 +4,7 @@
 
     <div class="title-page">{{project.title}}</div>
 
-    <div class="desc-page">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus commodi et placeat ipsa sunt modi?
-        Accusamus esse in temporibus debitis repellat architecto deleniti sed maiores assumenda. Voluptas facere quod
-        illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus commodi et placeat ipsa sunt modi?
-        Accusamus esse in temporibus debitis repellat architecto deleniti sed maiores assumenda. Voluptas facere quod
-        illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus commodi et placeat ipsa sunt modi?
-        Accusamus esse in temporibus debitis repellat architecto deleniti sed maiores assumenda. Voluptas facere quod
-        illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus commodi et placeat ipsa sunt modi?
-        Accusamus esse in temporibus debitis repellat architecto deleniti sed maiores assumenda. Voluptas facere quod
-        illo.
-    </div>
+    <div class="desc-page" [innerHTML]="project.description" ></div>
 
     <div class="flex-sec" *ngFor="let img of project.images">
         <div class="text" *ngIf="img.position === 'left'" [innerHTML]="img.text"></div>

@@ -1,9 +1,8 @@
 <div class="factures-app">
     <div class="title">Payer Vos Factures</div>
     <div class="desc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem at accusantium delectus,
-        possimus molestiae fuga rem eius iure placeat, explicabo, veritatis error earum ducimus iste
-        voluptatibus ipsa assumenda. Ipsa, id.
+        Payez toutes vos factures rapidement et en toute sécurité depuis votre compte ImpactBank. Suivez vos paiements
+        en temps réel et évitez les retards.
     </div>
     <div class="blocks" *ngIf="!openFormFacture">
         <div class="block" (click)="openFormFacture = true;company = 'steg'">
@@ -51,7 +50,7 @@
                 <option value="9876 5432 1424 7895">N° 9876 5432 1424 7895</option>
             </select>
         </div>
-        <button (click)="confirmPay()" >payer</button>
+        <button (click)="confirmPay()">payer</button>
         <div class="ft" (click)="openFormFacture = false">Changer le fournisseur ou la société</div>
     </div>
 </div>

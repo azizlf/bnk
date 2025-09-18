@@ -6,38 +6,38 @@
             </div>
 
             <div class="main-title">
-                <h1>Bonjour Shayma</h1>
+                <h1>Bonjour</h1>
                 <h2>Comment puis-je vous aider aujourd'hui ?</h2>
             </div>
 
             <div class="feature-cards">
                 <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-language"></i></div>
+                    <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
                     <br>
-                    <h3>Generate True 4K Next-Gen Videos</h3>
+                    <h3>Gérer votre compte</h3>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="card-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
                     <br>
-                    <h3>Generate Voiceovers, Music, or Sound Effects</h3>
+                    <h3>Effectuer des Transferts & Paiements</h3>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
                     <br>
-                    <h3>Interact with the Smartest Data Bot Ever</h3>
+                    <h3>Impact & Investissement</h3>
                 </div>
             </div>
         </div>
         <div class="list-msgs" *ngIf="openMessages">
             <div class="ctn">
                 <div [class]="msg.sender === 'chat' ? 'msg left':'msg right'" *ngFor="let msg of messages">
-                    <span>{{msg.msg}}</span>
+                    <span [innerHTML]="msg.msg"></span>
                 </div>
                 <div class="thinking" *ngIf="isThinking"><i class="fa-solid fa-circle"></i></div>
             </div>
         </div>
         <div class="input-container">
-            <input type="text" #msinput placeholder="Ask me anything..." class="chat-input">
+            <input type="text" #msinput placeholder="Poser une question ..." class="chat-input">
             <button class="send-btn" (click)="sendMsg(msinput)">→</button>
         </div>
     </div>

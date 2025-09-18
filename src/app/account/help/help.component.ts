@@ -12,19 +12,15 @@ export class HelpComponent {
   questions = [
     {
       question:"Comment effectuer un transfert ?",
-      answer:""
-    },
-    {
-      question:"Les transferts sont-ils sécurisés ?",
-      answer:""
+      answer:"Entrez le montant et le bénéficiaire, puis confirmez la transaction. Toutes les opérations sont cryptées et sûres."
     },
     {
       question:"Comment contribuer à un projet social",
-      answer:""
+      answer:"Choisissez un projet dans la section dédiée, indiquez le montant que vous souhaitez contribuer et suivez l'impact généré."
     },
     {
       question:"Que faire en cas de probléme de paiement ?",
-      answer:""
+      answer:"Contactez notre support via l’application ou par email à support@impactbank.com. Notre équipe vous aidera rapidement."
     }
   ]
 

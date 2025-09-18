@@ -29,7 +29,14 @@ export class ChatComponent {
       this.isThinking = false
       setTimeout(() => {
         this.messages.push({
-          msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iste, nam tempora rerum autem est. Quidem beatae laudantium tempore, fugiat, qui maxime ab ipsum optio aliquid vitae accusamus odio. Magni.",
+          msg: `Bonjour ! 👋<br>
+                Je suis ton assistant ImpactBank. 
+                <br>Je peux t'aider à :<br>
+                1️⃣ Gérer votre compte (solde, retraits, historique,parametre de compte)<br>
+                2️⃣ Transfert ou Payer tes factures facilement<br>
+                3️⃣ Soutenir et suivre des projets sociaux<br>
+                Que veux-tu faire aujourd'hui ?<br>
+                <strong>(Cette discussion est une démonstration d'un assistant AI.<br> La version réel n'est pas encore disponible)</strong>`,
           sender: "chat"
         })
       }, 200);
