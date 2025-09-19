@@ -2,13 +2,18 @@
     <div class="navbar-cs">
         <img src="/assets/img/logo.png" alt="" class="logo">
         <div class="menu">
-            <div [class]="router === '' ? 'item active':'item'" (click)="router = ''"  routerLink="/app/">Acceuil</div>
-            <div [class]="router === 'transfert' ? 'item active':'item'" (click)="router = 'transfert'" routerLink="/app/transfert">Envoyer d'argent</div>
-            <div [class]="router === 'withdraw' ? 'item active':'item'" (click)="router = 'withdraw'" routerLink="/app/withdraw">Retirer d'argent</div>
-            <div [class]="router === 'payement' ? 'item active':'item'" (click)="router = 'payement'" routerLink="/app/payement">Paiement factures</div>
-            <div [class]="router === 'social' ? 'item active':'item'" (click)="router = 'social'" routerLink="/app/social">Impact Sociale</div>
-            <div [class]="router === 'investments' ? 'item active':'item'" (click)="router = 'investments'" routerLink="/app/investments">Projets INVEST</div>
-            <div class="user" (click)="openMenuNav = !openMenuNav" >
+            <div [class]="router === '' ? 'item active':'item'" (click)="router = ''" routerLink="/app/">Acceuil</div>
+            <div [class]="router === 'transfert' ? 'item active':'item'" (click)="router = 'transfert'"
+                routerLink="/app/transfert">Envoyer d'argent</div>
+            <div [class]="router === 'withdraw' ? 'item active':'item'" (click)="router = 'withdraw'"
+                routerLink="/app/withdraw">Retirer d'argent</div>
+            <div [class]="router === 'payement' ? 'item active':'item'" (click)="router = 'payement'"
+                routerLink="/app/payement">Paiement factures</div>
+            <div [class]="router === 'social' ? 'item active':'item'" (click)="router = 'social'"
+                routerLink="/app/social">Impact Sociale</div>
+            <div [class]="router === 'investments' ? 'item active':'item'" (click)="router = 'investments'"
+                routerLink="/app/investments">Projets INVEST</div>
+            <div class="user" (click)="openMenuNav = !openMenuNav">
                 <div class="img">
                     <ion-icon name="person-circle-outline"></ion-icon>
                 </div>
@@ -59,10 +64,64 @@
             <span>Se déconnecter</span>
         </div>
     </div>
-    <div class="cvr-menu" *ngIf="openMenuNav" (click)="openMenuNav = false" ></div>
+    <div class="navbar-mobile">
+        <img src="/assets/img/logo.png" alt="" class="logo">
+        <div class="icon" (click)="openMobileNav = true"><ion-icon name="menu-outline"></ion-icon></div>
+    </div>
+    <div [class]="openMobileNav ? 'menu-mobile active' : 'menu-mobile'">
+        <div class="user">
+            <div class="user-dt">
+                <div class="dt">
+                    <img src="/assets/img/profile-pic.png" alt="img" />
+                    <div class="name">
+                        <p>Olivia Brown</p>
+                        <span>ID: olivia_brown</span>
+                    </div>
+                </div>
+            </div>
+            <div class="icon" (click)="openMobileNav = false"><ion-icon name="close-outline"></ion-icon></div>
+        </div>
+        <div class="item" (click)="openMobileNav = false" routerLink="/app/invest">
+            <div class="icon"><ion-icon name="arrow-up-circle-outline"></ion-icon></div>
+            <span>Investir</span>
+        </div>
+        <div class="item" (click)="openMobileNav = false" routerLink="/app/history">
+            <div class="icon"><ion-icon name="time-outline"></ion-icon></div>
+            <span>Historiques</span>
+        </div>
+        <div class="item" (click)="openMobileNav = false" routerLink="/app/settings/profile">
+            <div class="icon"><ion-icon name="settings-outline"></ion-icon></div>
+            <span>Paramétres</span>
+        </div>
+        <div class="item" (click)="openMobileNav = false" routerLink="/app/help">
+            <div class="icon"><ion-icon name="help-outline"></ion-icon></div>
+            <span>Aide et Assistance</span>
+        </div>
+        <div class="item" (click)="openMobileNav = false" routerLink="/app/chat">
+            <div class="icon"><ion-icon name="logo-reddit"></ion-icon></div>
+            <span>AI Support</span>
+        </div>
+        <div class="item" (click)="openMobileNav = false">
+            <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
+            <span>Se déconnecter</span>
+        </div>
+    </div>
+    <div class="cvr-menu" *ngIf="openMenuNav" (click)="openMenuNav = false"></div>
     <div class="content-page">
-
         <router-outlet></router-outlet>
-
+    </div>
+    <div class="mobile-navbar">
+        <div [class]="router === '' ? 'item active':'item'" (click)="router = ''" routerLink="/app/"><ion-icon
+                name="home-outline"></ion-icon></div>
+        <div [class]="router === 'transfert' ? 'item active':'item'" (click)="router = 'transfert'"
+            routerLink="/app/transfert"><ion-icon name="arrow-up-circle-outline"></ion-icon></div>
+        <div [class]="router === 'withdraw' ? 'item active':'item'" (click)="router = 'withdraw'"
+            routerLink="/app/withdraw"><ion-icon name="arrow-down-circle-outline"></ion-icon></div>
+        <div [class]="router === 'payement' ? 'item active':'item'" (click)="router = 'payement'"
+            routerLink="/app/payement"><ion-icon name="reader-outline"></ion-icon></div>
+        <div [class]="router === 'social' ? 'item active':'item'" (click)="router = 'social'" routerLink="/app/social">
+            <ion-icon name="earth-outline"></ion-icon></div>
+        <div [class]="router === 'investments' ? 'item active':'item'" (click)="router = 'investments'"
+            routerLink="/app/investments"><ion-icon name="folder-outline"></ion-icon></div>
     </div>
 </div>

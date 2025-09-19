@@ -13,6 +13,8 @@ export class AccountComponent implements OnInit {
 
   router = "profile"
 
+  openMobileNav = false
+
   constructor(private routerr: Router) { }
 
   ngOnInit(): void {

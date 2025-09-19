@@ -3793,7 +3793,243 @@
 
 
 
+.navbar-mobile {
+
+    width: 100%;
+    padding: 5% 0;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar-mobile .logo {
+
+    width: 35%;
+    margin-left: 3%;
+
+}
+
+.navbar-mobile .icon {
+
+    font-size: 11vw;
+    margin-right: 4%;
+
+}
+
+.menu-mobile {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 239483290;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+    right: -100%;
+
+}
+
+.menu-mobile.active {
+
+    right: 0%;
+
+}
+
+.menu-mobile .user {
+
+    width: 100%;
+    border-radius: 1vw;
+    background-color: #fafafa;
+    margin-bottom: 1%;
+    padding: 3% 0;
+    padding-bottom: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu-mobile .user .user-dt {
+
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 3%;
+    border-radius: 0.8vw;
+    margin: 0 2%;
+
+}
+
+.menu-mobile .user .user-dt .dt {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 3.9vw;
+
+}
+
+.menu-mobile .user .user-dt .dt .name {
+
+    width: 100%;
+    line-height: 4vw;
+    overflow: hidden;
+}
+
+.menu-mobile .user .user-dt .dt .name p {
+
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #232323;
+    font-weight: 600;
+
+}
+
+.menu-mobile .user .user-dt .dt .name span {
+
+    font-size: 3.2vw;
+
+}
+
+.menu-mobile .user .user-dt .dt img {
+
+    width: 17%;
+    border-radius: 100%;
+    margin-right: 3%;
+
+
+}
+
+.menu-mobile .user .hr {
+
+    width: 90%;
+    padding: 0.05% 0;
+    background-color: #f0f0f0;
+
+}
+
+.menu-mobile .user .icon {
+
+    font-size: 11vw;
+    margin-right: 4%;
+    color: #232323;
+
+}
+
+.menu-mobile .user button:hover {
+
+    background-color: var(--theme-color);
+
+}
+
+.menu-mobile .item {
+
+    font-size: 4.3vw;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    padding: 3% 3%;
+    border-radius: 4vw;
+    width: 95%;
+
+}
+
+.menu-mobile .item:active {
+
+    scale: 0.98;
+
+}
+
+.menu-mobile .item .icon {
+
+    background-color: #f7f7f7;
+    padding: 5.9% 6%;
+    border-radius: 100%;
+    margin-right: 5%;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f1f1f;
+
+}
+
+.menu-mobile .item .icon ion-icon {
+
+    position: absolute;
+
+}
+
+.menu-mobile .item:hover {
+
+    background-color: #f9f9f9;
+
+}
+
+.mobile-navbar {
+
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.mobile-navbar .item {
+
+    width: 30%;
+    padding: 4%;
+    background-color: white;
+    color: #232323;
+    font-size: 6vw;
+    text-align: center;
+    border-top: 1vw solid transparent;
+
+}
+
+.mobile-navbar .item.active {
+
+    color: #0d8389;
+    border-color: #158085;
+
+}
+
+
+
 @media (max-width:900px) {
+
+    .client-app .content-page .dashbord-app .sc .hm {
+        padding-bottom: 5%;
+        margin-bottom: 3%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .ft-sc {
+        margin-bottom: 50%;
+        padding: 5% 0;
+    }
+
+    .mobile-navbar,
+    .navbar-mobile {
+        display: flex;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0vw;
+    }
+
+    .settings-account .content-pager .banks .item .dt .st {
+        color: white;
+        font-size: 3.1vw;
+        border-radius: 1000000vw;
+        padding: 0.3% 5%;
+    }
 
     .client-app .content-page .dashbord-app {
         display: block;
@@ -3806,6 +4042,11 @@
         margin: 0 4%;
         margin-top: 3%;
         border-radius: 3vw;
+        margin-bottom: 29%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .ft-sc{
+        height: auto;
     }
 
     .client-app .content-page .dashbord-app .sc .hm .solde span {
@@ -3825,6 +4066,10 @@
         border-radius: 100%;
         text-align: center;
         padding-bottom: 3.8%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .hm{
+        height: auto;
     }
 
     .client-app .content-page .dashbord-app .sc .hm .solde p {
@@ -3963,6 +4208,7 @@
 
     .client-app .content-page .transfert-app {
         overflow: hidden;
+        overflow-y: auto;
     }
 
     .client-app .content-page .transfert-app .ctn-trans {
@@ -5113,7 +5359,7 @@
         font-size: 3.3vw;
     }
 
-    .client-app .navbar-cs{
+    .client-app .navbar-cs {
         display: none;
     }
 

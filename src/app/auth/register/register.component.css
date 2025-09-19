@@ -34,7 +34,7 @@
 
 }
 
-.login-app .form .flex-input{
+.login-app .form .flex-input {
 
     width: 85%;
     display: flex;
@@ -43,7 +43,7 @@
 
 }
 
-.login-app .form .flex-input input{
+.login-app .form .flex-input input {
 
     width: 45%;
 
@@ -186,5 +186,58 @@
     position: absolute;
     background-image: linear-gradient(-23deg, #003d409a 30%, #000000a9 100%);
     z-index: 12;
+
+}
+
+
+
+@media (max-width:900px) {
+
+    .login-app .cover {
+        display: none;
+    }
+
+    .login-app .form .title {
+        font-size: 8.8vw;
+    }
+
+    .login-app .form {
+        width: 91%;
+    }
+
+    .login-app .form .sbtitle {
+
+        font-size: 4.1vw;
+
+    }
+
+    .login-app .form input {
+        width: 85%;
+        padding: 2.5% 4%;
+        font-size: 3.4vw;
+        margin-bottom: 6%;
+        background-color: transparent;
+        border: 0.1vw solid #d8d8d8;
+    }
+
+    .login-app .form button {
+        width: 85%;
+        font-size: 4vw;
+        padding: 3.5% 0;
+        background-color: var(--theme-color);
+        color: white;
+        transition: 0.3s;
+        margin-top: 1%;
+    }
+
+    .login-app .form .psf {
+        font-size: 4.2vw;
+    }
+
+    .login-app .form .ft {
+        width: 100%;
+        font-size: 3.4vw;
+    }
+
 
 }
