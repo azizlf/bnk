@@ -22,7 +22,7 @@
     </div>
     <div class="tl-sec">Questions Fréquentes</div>
     <div [class]="question === qtn.question ? 'item-qtn active' : 'item-qtn'" *ngFor="let qtn of questions">
-        <div class="tl" (click)="question = question === '' ? qtn.question : ''">
+        <div class="tl" (click)="question = question !== '' && question === qtn.question  ? '' : qtn.question">
             <span>{{qtn.question}}</span>
             <div class="icon"><ion-icon name="chevron-down-outline"></ion-icon></div>
         </div>

@@ -3790,3 +3790,1331 @@
     background-color: #0d5357;
 
 }
+
+
+
+@media (max-width:900px) {
+
+    .client-app .content-page .dashbord-app {
+        display: block;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .client-app .content-page .dashbord-app .sc {
+        width: 93%;
+        margin: 0 4%;
+        margin-top: 3%;
+        border-radius: 3vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .hm .solde span {
+        font-size: 3vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .hm .solde {
+        font-size: 6.5vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .hm .solde .icon {
+        margin-right: 1%;
+        font-size: 6vw;
+        border: 0.2vw solid #b0b0b0;
+        width: 18.5%;
+        padding: 4.5% 0;
+        border-radius: 100%;
+        text-align: center;
+        padding-bottom: 3.8%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .hm .solde p {
+        font-size: 3.1vw;
+        line-height: 4vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .hm .ft .tl {
+        font-size: 3.3vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .hm .ft .btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 0.1vw solid #e6e6e6;
+        padding: 4% 1%;
+        margin: 1.9% 0;
+        margin-right: 4%;
+        margin-bottom: 0;
+        float: left;
+        color: #232323;
+        justify-content: center;
+    }
+
+    .client-app .content-page .dashbord-app .sc .hm .ft .btn .icon {
+        font-size: 6.7vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .ft-sc .desc .title {
+        font-size: 4.3vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .ft-sc .desc p {
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .ft-sc .desc button {
+        padding: 2% 5%;
+        background-color: #0c565a;
+        color: white;
+        font-size: 3vw;
+        cursor: pointer;
+        margin-top: 7%;
+        border-radius: 1.3vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .ft-sc .icon {
+        font-size: 11vw;
+        color: #0e595e;
+        margin-right: 4%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .ft-sc .desc {
+        width: 68%;
+        margin-left: 3%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .flexed.notif {
+        display: none;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards .title {
+        font-size: 3.3vw;
+        margin: 1%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards .title .icon {
+        margin-right: 2%;
+        font-size: 4.9vw;
+        transform: translateY(14%);
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards p {
+        font-size: 3vw;
+        padding: 8% 11%;
+        padding-top: 0;
+        line-height: 3vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards .crds {
+        display: block;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards .crds .crd {
+        width: 94%;
+        margin: 0 3%;
+        padding: 26% 0;
+        position: relative;
+        background: #f9f9f9;
+        border: 0.1vw solid #eaeaea;
+        border-radius: 2.6vw;
+        margin-bottom: 6%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards .crds .crd .status {
+        position: absolute;
+        left: 5%;
+        top: 7%;
+        color: #1abac2;
+        display: flex;
+        align-items: center;
+        font-size: 3vw;
+        background-color: #1ca7af13;
+        border-radius: 2.8vw;
+        padding: 0.3% 4%;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards .crds .crd .ctn .number {
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards .crds .crd .ctn {
+        position: absolute;
+        width: 80%;
+        bottom: 10%;
+        left: 6%;
+        color: #2e2e2e;
+        font-size: 4vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards .crds .crd .date {
+        position: absolute;
+        top: 6%;
+        right: 5%;
+        color: #2e2e2e;
+        font-weight: 600;
+        font-size: 4vw;
+    }
+
+    .client-app .content-page .dashbord-app .sc .cards {
+        height: auto;
+    }
+
+    .client-app .content-page .transfert-app {
+        overflow: hidden;
+    }
+
+    .client-app .content-page .transfert-app .ctn-trans {
+        display: block;
+    }
+
+    .client-app .content-page .transfert-app .description {
+        width: 92%;
+        margin: 2% 4%;
+    }
+
+    .client-app .content-page .transfert-app .description .title {
+        font-size: 7.5vw;
+        color: #232323;
+        line-height: 10vw;
+        margin-bottom: 4%;
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    .client-app .content-page .transfert-app .description .item {
+        display: none;
+    }
+
+    .client-app .content-page .transfert-app .form {
+        width: 90%;
+        background-color: #fcfcfc;
+        border: 0.1vw solid #eaeaea;
+        border-radius: 1vw;
+        margin: 0 5%;
+    }
+
+    .client-app .content-page .transfert-app .form .input .lbl {
+        font-size: 3.8vw;
+    }
+
+    .client-app .content-page .transfert-app .form .input input,
+    .client-app .content-page .transfert-app .form .input textarea {
+        font-size: 3vw;
+    }
+
+    .client-app .content-page .transfert-app .form button {
+        font-size: 4vw;
+        border-radius: 1.4vw;
+    }
+
+    .client-app .content-page .messagebox .box {
+        width: 79%;
+        padding: 6%;
+    }
+
+    .client-app .content-page .box .icon {
+        font-size: 15vw;
+        margin: 7% 0;
+    }
+
+    .client-app .content-page .box .tl {
+        font-size: 4vw;
+    }
+
+    .client-app .content-page .box .desc {
+        font-size: 3vw;
+    }
+
+    .client-app .content-page .box button {
+        padding: 2% 13%;
+        font-size: 3vw;
+        color: white;
+        background-color: #0a3e41;
+        border-radius: 1.4vw;
+        cursor: pointer;
+        margin-top: 4%;
+    }
+
+    .client-app .content-page .withdraw-app {
+        display: block;
+    }
+
+    .client-app .content-page .withdraw-app .banks {
+        width: 97%;
+        height: auto;
+        border-right: none;
+        padding: 0 8%;
+        padding-left: 0%;
+        margin: 0 5%;
+        margin-right: 3%;
+    }
+
+    .client-app .content-page .withdraw-app .form {
+        width: 90%;
+        height: auto;
+        margin: 0 5%;
+    }
+
+    .client-app .content-page .withdraw-app .banks .title {
+        font-size: 5.5vw;
+        margin-top: 9%;
+    }
+
+    .client-app .content-page .withdraw-app .banks .sb {
+        font-size: 3.2vw;
+        color: #3a3a3a;
+        margin-bottom: 3%;
+        line-height: 4vw;
+    }
+
+    .client-app .content-page .withdraw-app .banks .item {
+        margin: 3% 0;
+    }
+
+    .client-app .content-page .withdraw-app .banks .item .tl {
+        font-size: 4.6vw;
+    }
+
+    .client-app .content-page .withdraw-app .banks .item .tl img {
+        width: 10%;
+    }
+
+    .client-app .content-page .withdraw-app .banks .item .dt {
+        font-size: 3.1vw;
+    }
+
+    .client-app .content-page .withdraw-app .banks .item .round {
+        top: 4%;
+        right: 3%;
+        font-size: 4vw;
+    }
+
+    .client-app .content-page .withdraw-app .form .title {
+        font-size: 5.5vw;
+        margin-top: 8%;
+    }
+
+    .client-app .content-page .withdraw-app .form .sb {
+        line-height: 5vw;
+        font-size: 3.2vw;
+        color: #3a3a3a;
+        margin-bottom: 3%;
+    }
+
+    .client-app .content-page .withdraw-app .form .money-dt .item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 3.1vw;
+        color: #1f1f1f;
+        padding: 4% 4%;
+    }
+
+    .client-app .content-page .withdraw-app .form .input {
+        font-size: 3.2vw;
+    }
+
+    .client-app .content-page .withdraw-app .form .input input {
+        font-size: 3.1vw;
+    }
+
+    .client-app .content-page .withdraw-app .form ul {
+        width: 90%;
+        font-size: 3vw;
+        line-height: 6vw;
+        margin: 5% 0;
+        margin-left: 5%;
+    }
+
+    .client-app .content-page .factures-app .title {
+        font-size: 7vw;
+    }
+
+    .client-app .content-page .factures-app .desc {
+        font-size: 3.2vw;
+        width: 79%;
+    }
+
+    .client-app .content-page .factures-app .blocks {
+        display: inline-block;
+        margin-bottom: 3%;
+    }
+
+    .client-app .content-page .factures-app .blocks .block {
+        width: 44%;
+        background-color: white;
+        box-shadow: 0 0 0.5vw 0 #00000014;
+        padding: 2%;
+        border-radius: 6vw;
+        transition: 0.4s;
+        cursor: pointer;
+        margin: 2% 3%;
+        float: left;
+    }
+
+    .client-app .content-page .impact-social-app .title {
+        font-size: 7vw;
+    }
+
+    .client-app .content-page .impact-social-app .sb {
+        width: 81%;
+        font-size: 3.5vw;
+    }
+
+    .client-app .content-page .impact-social-app .blocks {
+        display: block;
+    }
+
+    .client-app .content-page .impact-social-app .blocks .block {
+        width: 102%;
+        text-align: center;
+        background-color: white;
+        padding: 7% 1%;
+        border-radius: 4vw;
+        box-shadow: 0 0 1vw 0 #0000000e;
+        transition: 0.2s;
+        margin: 3% 0;
+        margin-bottom: 9%;
+    }
+
+    .client-app .content-page .impact-social-app .blocks .block .nbr {
+        font-size: 6vw;
+    }
+
+    .client-app .content-page .withdraw-app .form button {
+        width: 92%;
+        padding: 2.6% 0;
+        border-radius: 2.6vw;
+        background-color: #0d5357;
+        color: white;
+        font-size: 4.2vw;
+        cursor: pointer;
+        margin-bottom: 11%;
+        margin-top: 3%;
+    }
+
+    .client-app .content-page .factures-app .form {
+        width: 86%;
+    }
+
+    .client-app .content-page .factures-app .form .logo-form {
+        font-size: 3.2vw;
+        padding: 3% 0;
+    }
+
+    .client-app .content-page .factures-app .form .logo-form img {
+        width: 9%;
+        margin: 0 3%;
+    }
+
+    .client-app .content-page .factures-app .form .input-form-cs {
+        font-size: 3.2vw;
+    }
+
+    .client-app .content-page .factures-app .form .input-form-cs input {
+        padding: 2% 4%;
+        font-size: 3.1vw;
+    }
+
+    .client-app .content-page .factures-app .form .input-form-cs select {
+        padding: 4% 2.9%;
+        font-size: 3.1vw;
+    }
+
+    .client-app .content-page .factures-app .form button {
+        width: 100%;
+        padding: 3% 0;
+        border-radius: 1.6vw;
+        background-color: #0d5357;
+        color: white;
+        font-size: 4.2vw;
+        cursor: pointer;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+
+    .client-app .content-page .factures-app .form .ft {
+        font-size: 3.2vw;
+    }
+
+    .client-app .content-page .impact-social-app .blocks .block .tl {
+        font-size: 4.2vw;
+    }
+
+    .client-app .content-page .impact-social-app .blocks .block .icon {
+        font-size: 10vw;
+    }
+
+    .client-app .content-page .impact-social-app .sec-title .tl {
+        font-size: 4vw;
+        color: #202020;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .client-app .content-page .impact-social-app .sec-title {
+        border: none;
+    }
+
+    .client-app .content-page .impact-social-app .projects .project {
+        width: 98%;
+        padding: 7% 5%;
+        border-radius: 3vw;
+        margin-bottom: 5%;
+    }
+
+    .client-app .content-page .impact-social-app .projects .project .img {
+        border-radius: 4vw;
+    }
+
+    .client-app .content-page .impact-social-app .projects .project .tl {
+        font-size: 4.1vw;
+    }
+
+    .client-app .content-page .impact-social-app .projects .project .desc {
+        font-size: 3.2vw;
+        color: #4c4c4c;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 5vw;
+    }
+
+    .client-app .content-page .impact-social-app .projects .project button {
+        border: 0.1vw solid #8a8a8a;
+        padding: 2% 39%;
+        color: #393939;
+        font-size: 3.2vw;
+        border-radius: 2vw;
+        margin: 2% 1%;
+        margin-top: 4%;
+        transition: 0.2s;
+    }
+
+    .client-app .content-page .impact-social-project-app .title {
+        width: 87%;
+        font-size: 7vw;
+        color: #202020;
+        margin-bottom: 2%;
+        text-align: center;
+        margin-top: 5%;
+        line-height: 9vw;
+    }
+
+    .client-app .content-page .impact-social-project-app .sb {
+        width: 79%;
+        font-size: 3.5vw;
+        color: #505050;
+        margin-bottom: 4%;
+        text-align: center;
+    }
+
+    .client-app .content-page .impact-social-project-app .projects .project {
+        font-size: 2.2vw;
+    }
+
+    .client-app .content-page .impact-social-project-app .projects {
+        display: block;
+    }
+
+    .client-app .content-page .impact-social-project-app .projects .project {
+        width: 100%;
+        padding: 5%;
+        border-radius: 5vw;
+        background-color: white;
+        border: 0.1vw solid #e8e8e8;
+        font-size: 3.2vw;
+        font-weight: 600;
+        color: #343434;
+        margin-bottom: 6%;
+    }
+
+    .client-app .content-page .impact-social-project-app .projects {
+        width: 87%;
+    }
+
+    .client-app .content-page .impact-social-project-app .projects .project .img {
+        border-radius: 4vw;
+    }
+
+    .client-app .content-page .impact-social-project-app .blocks {
+        width: 95%;
+        display: block;
+    }
+
+    .client-app .content-page .impact-social-project-app .blocks .block {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .client-app .content-page .impact-social-project-app .blocks .block .tl {
+        font-size: 3.5vw;
+        margin: 3% 0;
+        margin-top: 1%;
+    }
+
+    .client-app .content-page .impact-social-project-app .blocks .block .nbr {
+
+        font-size: 7vw;
+
+    }
+
+    .client-app .content-page .impact-social-project-app .sec-title .tl {
+        font-size: 5vw;
+        color: #202020;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        margin-top: 9%;
+    }
+
+    .client-app .content-page .impact-social-project-app .comment {
+        display: block;
+    }
+
+    .client-app .content-page .impact-social-project-app .comment .text {
+        font-size: 3.2vw;
+        line-height: 7vw;
+        color: #393939;
+        width: 97%;
+    }
+
+    .client-app .content-page .impact-social-project-app .comment .img {
+        width: 97%;
+        padding: 34% 0;
+        border-radius: 4vw;
+        margin-left: 0%;
+        margin: 8% 0;
+        margin-bottom: 16%;
+    }
+
+    .client-app .content-page .invest-app .cover {
+        border-radius: 4vw;
+        padding-bottom: 9%;
+    }
+
+    .client-app .content-page .invest-app .cover .title {
+        font-size: 8vw;
+        margin-top: 7%;
+    }
+
+    .client-app .content-page .invest-app .cover .desc {
+        font-size: 3.5vw;
+        line-height: 5.8vw;
+        width: 87%;
+        opacity: 0.8;
+        margin: 4% 0;
+    }
+
+    .client-app .content-page .invest-app .cover input {
+        width: 90%;
+        padding: 2% 4%;
+        font-size: 3.2vw;
+        border: none;
+        border-radius: 1.5vw;
+        background-color: white;
+        margin-top: 4%;
+        opacity: 0.8;
+    }
+
+    .client-app .content-page .invest-app .projects .project {
+        width: 91%;
+        padding: 47% 0;
+        padding-bottom: 48%;
+        border-radius: 4vw;
+        background-color: white;
+        box-shadow: 0 0 0.5vw 0 #00000012;
+        position: relative;
+        float: left;
+        margin: 1% 4%;
+        margin-bottom: 5%;
+    }
+
+    .client-app .content-page .invest-app .projects .project .image {
+        border-radius: 3vw;
+    }
+
+    .client-app .content-page .invest-app .projects .project .title {
+        font-size: 3.7vw;
+        color: #232323;
+        font-weight: 600;
+        line-height: 5.8vw;
+    }
+
+    .client-app .content-page .invest-app .projects .project .description {
+        font-size: 3.2vw;
+        line-height: 5.1vw;
+        margin-top: 0%;
+        padding: 0 5%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+    }
+
+    .client-app .content-page .invest-project-app .cover {
+        width: 92%;
+        border-radius: 4.3vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 37% 0;
+        margin-top: 7%;
+        box-shadow: 0 0 1vw 0 #00000016;
+        margin-bottom: 4%;
+    }
+
+    .client-app .content-page .invest-project-app .title-page {
+        width: 95%;
+        font-size: 5vw;
+        color: #202020;
+        margin-bottom: 1%;
+        text-align: left;
+        margin-top: 2%;
+        line-height: 7vw;
+        padding: 0 2%;
+    }
+
+    .client-app .content-page .invest-project-app .desc-page {
+        width: 95%;
+        font-size: 3.2vw;
+        color: #505050;
+        margin-bottom: 4%;
+        text-align: left;
+        line-height: 7vw;
+        padding: 0 2%;
+    }
+
+    .client-app .content-page .invest-project-app .flex-sec {
+        display: none;
+    }
+
+    .client-app .content-page .invest-project-app .ftr .tl {
+        font-size: 4.6vw;
+        color: #000000;
+        padding-bottom: 2%;
+        border-bottom: 0.1vw solid #dcdcdc;
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .client-app .content-page .invest-project-app .ftr .projects .project {
+        width: 97%;
+        padding: 53% 0;
+        border-radius: 4vw;
+        background-color: white;
+        box-shadow: 0 0 0.5vw 0 #00000012;
+        position: relative;
+        float: left;
+        margin: 1% 0;
+        margin-bottom: 7%;
+        margin-left: 1%;
+    }
+
+    .client-app .content-page .invest-project-app .ftr .project .title {
+        font-size: 3.7vw;
+        color: #232323;
+        font-weight: 600;
+        line-height: 5.8vw;
+        padding: 3% 5%;
+        padding-bottom: 0;
+        cursor: pointer;
+    }
+
+    .client-app .content-page .invest-project-app .ftr .project .description {
+        font-size: 3.2vw;
+        line-height: 5.1vw;
+        margin-top: 2%;
+        padding: 0 5%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .client-app .content-page .invest-project-app .ftr .project .image {
+        font-size: 3vw;
+    }
+
+    .client-app .content-page .help-app .title {
+
+        font-size: 6vw;
+
+    }
+
+    .client-app .content-page .help-app .sb {
+        width: 83%;
+        font-size: 3.5vw;
+        color: #505050;
+        margin-bottom: 16%;
+        text-align: center;
+    }
+
+    .client-app .content-page .help-app .blocks {
+        display: block;
+    }
+
+    .client-app .content-page .help-app .blocks .block {
+        width: 99%;
+        margin-bottom: 7%;
+        padding: 9% 0;
+        border-radius: 4vw;
+    }
+
+    .client-app .content-page .help-app .blocks .block .icon {
+        font-size: 10vw;
+    }
+
+    .client-app .content-page .help-app .blocks .block .tl {
+        font-size: 3.2vw;
+    }
+
+    .client-app .content-page .help-app .tl-sec {
+        font-size: 5vw;
+        color: #1b1b1b;
+        font-weight: 600;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    .client-app .content-page .help-app .item-qtn {
+        width: 82%;
+        border: 0.1vw solid #ebebeb;
+        padding: 4%;
+        border-radius: 3vw;
+        margin-bottom: 3%;
+    }
+
+    .client-app .content-page .help-app .item-qtn .tl {
+        font-size: 3.3vw;
+    }
+
+
+    .client-app .content-page .help-app .item-qtn .desc {
+        font-size: 2.9vw;
+    }
+
+    .client-app .content-page .history-app .title {
+        font-size: 6.8vw;
+    }
+
+    .client-app .content-page .history-app .sb {
+        width: 91%;
+        font-size: 4.3vw;
+        color: #505050;
+        margin: 0 5%;
+        margin-bottom: 4%;
+    }
+
+    .client-app .content-page .history-app .btns button {
+        width: 99%;
+        padding: 3% 0;
+        font-size: 4.1vw;
+        color: white;
+        background-color: #158085;
+        border-radius: 1.9vw;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .client-app .content-page .history-app .btns button .icon {
+        font-size: 5.5vw;
+        margin-right: 3%;
+    }
+
+    .client-app .content-page .history-app {
+        overflow: auto;
+    }
+
+    .client-app .content-page .history-app .table-cs {
+        width: 144%;
+    }
+
+    .client-app .content-page .history-app .table-cs .titles .it {
+        width: 30%;
+        color: #212121;
+        font-weight: 600;
+        padding: 0 2%;
+        font-size: 3vw;
+    }
+
+    .client-app .content-page .history-app .table-cs .item .it {
+        width: 30%;
+        color: #212121;
+        font-weight: 400;
+        padding: 0 2%;
+        font-size: 3vw;
+    }
+
+    .client-app .content-page .history-app .table-cs .item .it span {
+        padding: 7% 15%;
+        color: white;
+        font-size: 3vw;
+        border-radius: 10000vw;
+    }
+
+    .settings-account {
+        display: block;
+    }
+
+    .settings-account .menu {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2%;
+        margin-top: 3%;
+    }
+
+    .settings-account .menu .item {
+        width: 45%;
+        margin: 0 0%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 1.5%;
+        text-align: center;
+    }
+
+    .settings-account .menu .item .icon {
+
+        display: none;
+
+    }
+
+    .settings-account .menu .item span {
+
+        font-size: 3vw;
+
+    }
+
+    .settings-account .content-pager .page {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    app-profile,
+    app-wallet,
+    app-bank {
+
+        width: 100%;
+
+    }
+
+    .settings-account .content-pager {
+        width: 100%;
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .settings-account .content-pager .page .img {
+        width: 56%;
+        margin-bottom: 8%;
+        border-radius: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 7%;
+    }
+
+    .settings-account .content-pager .section {
+        width: 100%;
+    }
+
+    .settings-account .content-pager .section .title {
+
+        font-size: 3.1vw;
+
+    }
+
+    .settings-account .content-pager .section .input .lbl {
+        font-size: 3.1vw;
+    }
+
+    .settings-account .content-pager .section .input input {
+        padding: 1.6% 5%;
+        font-size: 3.1vw;
+    }
+
+    .settings-account .content-pager .section select {
+        width: 100%;
+        border-radius: 0.6vw;
+        padding: 4.8% 3%;
+        font-size: 3.1vw;
+        border: 0.1vw solid #ededed;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .settings-account .content-pager .sec-btn {
+        width: 90%;
+        padding: 3% 0;
+        border-radius: 2.7vw;
+        background-color: #0d5357;
+        color: white;
+        font-size: 4.2vw;
+        cursor: pointer;
+        margin-bottom: 5%;
+    }
+
+    .settings-account .content-pager .section .title .icon {
+        margin-right: 1%;
+        font-size: 7vw;
+    }
+
+    .settings-account .content-pager .section .descc {
+        font-size: 3.1vw;
+    }
+
+    .settings-account .content-pager .section .tlll {
+        font-size: 4.4vw;
+    }
+
+    .settings-account .content-pager .section .btn {
+        padding: 4% 6%;
+        background-color: #148086;
+        color: white;
+        font-size: 3vw;
+        cursor: pointer;
+        margin-top: 1%;
+    }
+
+    .settings-account .content-pager .cards {
+        display: block;
+    }
+
+    .settings-account .content-pager .cards .card-cs {
+        width: 100%;
+        padding: 31% 0;
+        position: relative;
+        background: #f9f9f9;
+        border: 0.1vw solid #eaeaea;
+        border-radius: 2.6vw;
+        margin-bottom: 6%;
+    }
+
+    .settings-account .content-pager .cards .card-cs button {
+        font-size: 4.1vw;
+    }
+
+    .settings-account .content-pager .cards .card-cs .status {
+        position: absolute;
+        left: 3%;
+        top: 5%;
+        color: #1abac2;
+        font-size: 3.2vw;
+        background-color: #1ca7af13;
+        border-radius: 1000000vw;
+        padding: 1% 6%;
+    }
+
+    .settings-account .content-pager .cards .card-cs .ctn .number {
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+
+    .settings-account .content-pager .cards .card-cs .ctn {
+        position: absolute;
+        width: 80%;
+        bottom: 10%;
+        left: 6%;
+        color: #383838;
+        font-size: 4vw;
+    }
+
+    .settings-account .content-pager .section .desc ul li {
+        font-size: 2.9vw;
+    }
+
+    .settings-account .content-pager .section .desc {
+        margin-left: 16%;
+    }
+
+    .settings-account .content-pager .banks .item {
+        margin-bottom: 4%;
+    }
+
+    .settings-account .content-pager .banks .item .bt button {
+        padding: 4% 7%;
+        font-size: 4.1vw;
+    }
+
+    .settings-account .content-pager .banks .item .tl {
+        font-size: 3.6vw;
+        margin-bottom: 13%;
+        margin-top: 1%;
+    }
+
+    .settings-account .content-pager .banks .item .tl img {
+        width: 11%;
+    }
+
+    .settings-account .content-pager .banks .item .dt {
+        font-size: 3.1vw;
+    }
+
+    .settings-account .content-pager .page .img .cvr .icon {
+        font-size: 18vw;
+    }
+
+    .client-app .content-page .invest-form .confirm {
+        overflow: hidden;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .client-app .content-page .invest-form .title {
+        display: block;
+    }
+
+    .client-app .content-page .invest-form .title .pt {
+        font-size: 3vw;
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 92%;
+    }
+
+    .client-app .content-page .invest-form .title .gr {
+        font-size: 8vw;
+        width: 90%;
+        color: #272727;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        line-height: 7.5vw;
+        margin: 0 2%;
+    }
+
+    .client-app .content-page .invest-form .flex-welcome .boxs {
+        display: block;
+    }
+
+    .client-app .content-page .invest-form .flex-welcome .boxs .box {
+        width: 88%;
+        padding: 3% 5%;
+        border-radius: 3vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+        background-color: #d2d8e014;
+        border: 0.1vw solid #d2d8e0;
+        margin: 3% 6%;
+    }
+
+    .client-app .content-page .invest-form .flex-welcome .boxs .box .tl {
+        font-size: 4.7vw;
+    }
+
+    .client-app .content-page .invest-form .flex-welcome .boxs .box .desc {
+        font-size: 3.1vw;
+    }
+
+    .client-app .content-page .invest-form .ft-btns button {
+        padding: 2% 6%;
+        background-color: #10676b;
+        color: white;
+        font-size: 4.4vw;
+        border-radius: 2.7vw;
+        margin: 0 2%;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .client-app .content-page .invest-form .ft-btns {
+        margin-bottom: 10%;
+    }
+
+    .client-app .content-page .invest-form .tl-section {
+        font-size: 5vw;
+        margin-left: 5%;
+    }
+
+    .client-app .content-page .invest-form .prjs .projects .project {
+        width: 97%;
+        padding: 43% 0;
+        border-radius: 4vw;
+        background-color: white;
+        box-shadow: 0 0 0.5vw 0 #00000012;
+        position: relative;
+        float: left;
+        margin: 1% 0;
+        margin-bottom: 7%;
+        margin-left: 1%;
+    }
+
+    .client-app .content-page .invest-form .prjs .projects .project .title {
+        font-size: 3.7vw;
+        color: #232323;
+        font-weight: 600;
+        line-height: 5.8vw;
+        padding: 3% 5%;
+        padding-bottom: 0;
+        cursor: pointer;
+    }
+
+    .client-app .content-page .invest-form .prjs .projects .project .image {
+        height: 70%;
+        border-radius: 3vw;
+    }
+
+    .client-app .content-page .invest-form .prjs .projects .project .title {
+        font-size: 4.9vw;
+    }
+
+    .client-app .content-page .invest-form .budget .flex-cards {
+        display: block;
+    }
+
+    .client-app .content-page .invest-form .budget .flex-cards .crd {
+        width: 79%;
+        display: inline-block;
+        margin-left: 4%;
+    }
+
+    .client-app .content-page .invest-form .budget .flex-cards .crd span {
+        padding: 1% 6%;
+        border: 0.1vw solid #e1e1e1;
+        float: left;
+        margin-bottom: 2%;
+        margin-right: 2%;
+        font-size: 3.3vw;
+        cursor: pointer;
+    }
+
+    .client-app .content-page .invest-form .budget .flex-cards .crd .ttl {
+
+        font-size: 4.3vw;
+
+    }
+
+    .client-app .content-page .invest-form .budget .flex-cards .crd .nbr {
+        font-size: 5.9vw;
+    }
+
+    .client-app .content-page .invest-form .budget .flex-cards .crd p {
+        font-size: 3.1vw;
+    }
+
+    .client-app .content-page .invest-form .confirm {
+        display: block;
+    }
+
+    .client-app .content-page .invest-form .confirm .section {
+        width: 84%;
+        height: auto;
+        color: #2a2a2a;
+        margin: 0% 8%;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .title {
+
+        font-size: 5.5vw;
+
+    }
+
+    .client-app .content-page .invest-form .confirm .section .sec-title {
+        font-size: 3.3vw;
+        padding: 2% 0;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .flexs .dt .lbl {
+        font-size: 3vw;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .flexs .dt .vl {
+        font-size: 3.1vw;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .flexs .dt {
+        width: 49%;
+        padding: 1% 4%;
+        background-color: #f8fbfc;
+        color: #222222;
+        border-radius: 2vw;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .cards {
+        display: block;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .cards .card-cs {
+        width: 109%;
+        padding: 31% 0;
+        position: relative;
+        border: 0.1vw solid #eaeaea;
+        border-radius: 2.6vw;
+        cursor: pointer;
+        margin-bottom: 6%;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .cards .card-cs .round {
+        font-size: 4.2vw;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .cards .card-cs .date {
+        font-size: 4vw;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .cards .card-cs .ctn .number {
+        font-size: 5.3vw;
+        font-weight: 600;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .cards .card-cs .ctn {
+        font-size: 4vw;
+    }
+
+    .client-app .content-page .invest-form .confirm .project-view {
+        display: none !important;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .earn-details .item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #212121;
+        padding: 4% 5%;
+        background-color: #f8fcff;
+        border-radius: 2.4vw;
+        margin-bottom: 4%;
+    }
+
+    .client-app .content-page .invest-form .confirm .section button {
+        width: 100%;
+        padding: 4% 0;
+        font-size: 4.2vw;
+        color: white;
+        background-color: #0c565a;
+        border-radius: 2.5vw;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .earn-details .item .t {
+        font-size: 3.3vw;
+    }
+
+    .client-app .content-page .invest-form .confirm .section .earn-details .item .v {
+        font-size: 3.3vw;
+    }
+
+    .client-app .navbar-cs{
+        display: none;
+    }
+
+}

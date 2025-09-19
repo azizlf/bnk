@@ -13,16 +13,16 @@ export class ProjectService {
       description: "Grâce à ImpactBank, j’ai pu lancer mon atelier de couture pour aider les jeunes de mon village à apprendre un métier.",
       details: [
         {
-          nbr: 1200,
-          title: "Enfants scolarisés"
+          nbr: 3,
+          title: "Ecoles rurales"
         },
         {
-          nbr: 15,
-          title: "écoles rénovées"
+          nbr: 450,
+          title: "Enfants soutenus"
         },
         {
-          nbr: 500,
-          title: "Ordinateurs distribués"
+          nbr: 200,
+          title: "Enfants connectés au digital"
         }
       ],
       prj: [
